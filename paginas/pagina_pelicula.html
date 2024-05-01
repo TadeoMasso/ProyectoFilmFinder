@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
-    <link rel="stylesheet" href="../css/paginas/pagina_pelicula.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <script>
-      $(function () {
-        $("#footer").load("../componentes/footer.html");
-        $("#navbar").load("../componentes/navbar.html");
-      });
-    </script>
-    <title>Pagina Pelicula | FilmFinder</title>
-  </head>
-  <body>
-    <!--Navbar-->
-    <div id="navbar"></div>
-    <!--Inicio-->
 
-    <section>
-      <div class="contenedor">
-        <div class="fondo-img"></div>
-        <div class="parte-inferior-negra">
-          <div class="contenedor_card">
-            <div>
-              <img class="poster_pelicula"  src="../img/peliculas/dune_two.jpg" alt="peli" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../img/fotos_recursos/favicon.svg" />
+  <link rel="stylesheet" href="../css/paginas/pagina_pelicula.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script>
+    $(function () {
+      $("#footer").load("../componentes/footer.html");
+      $("#navbar").load("../componentes/navbar.html");
+    });
+  </script>
+  <title>Pagina Pelicula | FilmFinder</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <div id="navbar"></div>
+  <!--Inicio-->
+
+  <section>
+    <div class="contenedor">
+      <div class="fondo-img"></div>
+      <div class="parte-inferior-negra">
+        <div class="contenedor_card">
+          <div>
+            <img class="poster_pelicula" src="../img/peliculas/dune_two.jpg" alt="peli" />
+          </div>
+          <div class="div_datos">
+            <h1 class="titulo_peli">Dune Two</h1>
+            <div class="contenedor_opciones">
+              <div class="contenedor_opciones_a">
+                <span class="duracion"><i class="fas fa-clock"></i>1h 30m</span>
+                <strong class="estreno">● 2023</strong>
+                <span class="edad">ATP</span>
+              </div>
+              <div class="contenedor_opciones_b">
+                <a target="_blank" href="youtube.com" class="trailer_boton"><i class="fas fa-film"></i>Trailer</a>
+                <a href="http://" class="compartir_boton" target="_blank"><i class="fas fa-share"></i> Compartir</a>
+                <a target="_blank" href="./index.html#form-register" class="reportar_boton"><i
+                    class="fas fa-flag"></i>Reportar</a>
+              </div>
             </div>
-            <div>
-              <h1>Dune Two</h1>
-              <p>Duracion</p>
-              <span>Atp</span>
-              <div>
-                <a target="_blank" href="youtube.com">Llevar al link</a>
-                <span>Reportar</span>
+            <div class="contenedor_genero">
+              <span class="genero"> Genero 2</span> 
+              <span class="genero">Genero 1</span>
+              <hr class="linea">
+              <p class="descripcion">El duque Paul Atreides se une a los Fremen y comienza su entrenamiento para convertirse en Muad'Dib, mientras trata de evitar el terrible futuro que ha previsto: una guerra santa en su nombre, esparciéndose por todo el universo conocido.</p>
+            </div>
+            <div class="contenedor_general_elenco">
+              <div class="contenedor_elenco">
+                <span class="puesto">Elenco: </span>
+                <span class="elenco"> Nombre inventado</span>
+                <span class="elenco"> Nombre inventado</span>
+                <span class="elenco"> Nombre inventado</span>
               </div>
-
-              <div>
-                <span>Primera categoria</span>
-                <span>Segunda categoria</span>
-              </div>
-              <p>descripcion</p>
-              <div class="contenedor_general_elenco">
-                <div class="contenedor_elenco">
-                  <span class="puesto">Elenco: </span>
-                  <span class="elenco"> Nombre inventado</span>
-                  <span class="elenco"> Nombre inventado</span>
-                  <span class="elenco">  Nombre inventado</span>
-                </div>
-                <div class="contenedor_elenco">
-                  <span class="puesto">Director: </span>
-                  <span class="elenco"> Nombre inventado</span>
-                </div>
+              <div class="contenedor_elenco">
+                <span class="puesto">Director: </span>
+                <span class="elenco"> Nombre inventado</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--Footer-->
-    <div id="footer"></div>
-  </body>
+  <!--Footer-->
+  <div id="footer"></div>
+</body>
+
 </html>

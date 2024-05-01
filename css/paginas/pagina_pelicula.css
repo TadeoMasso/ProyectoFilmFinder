@@ -41,13 +41,18 @@ body {
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  /* z-index: 3; */
-  background-color: red;
+   z-index: 3;
+  background-color: rgb(77, 74, 74);
+
 }
 
 .poster_pelicula {
+  top: -180px;
+  display: flex;
+  position: relative;
   border-radius: 2vh;
   box-shadow: 0px 0px 20px rgb(0, 0, 0);
+   
 }
 
 /*Contenedor Elenco*/
@@ -63,10 +68,34 @@ body {
   margin: 7px;
 }
 .puesto {
-  background-color: aqua;
+  background-color: yellowgreen;
   border-radius: 10px;
   padding: 5px;
   font-size: 15px;
+}
+.trailer_boton{
+  text-decoration: none;
+  background-color: rgb(233, 73, 41);
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 3px;
+  padding: 3px;
+}
+.reportar_boton{
+  text-decoration: none;
+  background-color: rgb(233, 73, 41);
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 3px;
+  padding: 3px;
+}
+.compartir_boton{
+  text-decoration: none;
+  background-color: rgb(233, 73, 41);
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 3px;
+  padding: 3px;
 }
 .elenco {
   margin: 5px;
@@ -74,4 +103,58 @@ body {
   background-color: greenyellow;
   font-size: 15px;
   padding: 5px;
+}
+.titulo_peli{
+  position: relative;
+  font-size: 80px;
+  margin-left:30px;
+  color: red;
+  /* top: -110px; */
+
+}
+
+.div_datos{
+  position: relative;
+  top: -110px;
+}
+.contenedor_opciones{
+  background-color: pink;
+  padding: 10px;
+}
+.contenedor_opciones_a{
+  margin-left: 20px;
+font-size: 23px;
+}
+.edad{
+  background-color: chartreuse;
+  padding: 3px;
+}
+.contenedor_opciones_b{
+  margin: 15px;
+  background-color: red;
+  width: fit-content;
+}
+
+.contenedor_genero{
+  margin: 20px;
+}
+
+.genero{
+  margin: 10px;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: red;
+  border: 2px solid black;
+  padding: 5px;
+}
+.linea{
+  margin: 10px;
+  width: 70%;
+}
+.descripcion{
+  padding: 10px;
+  font-size: 24px;
+  width: 400px; 
+  word-wrap: break-word; 
+  margin-bottom: 20px;
 }
