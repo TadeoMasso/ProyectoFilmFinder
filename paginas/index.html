@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/paginas/index.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
     <script>
       $(function () {
-        $("#footer").load("../componentes/footer.html");
         $("#navbar").load("../componentes/navbar.html");
+        $("#footer").load("../componentes/footer.html");
+        $("#form").load("../componentes/formulario.html");
+        $("#peliculas_destacadas").load("../componentes/peliculas_destacadas.html")
       });
     </script>
     <title>Home | FilmFinder</title>
@@ -18,7 +24,9 @@
     <div id="navbar"></div>
     <!--Inicio-->
     <div class="contenedor_titulo">
-      <h1 class="titulo_inicio">Bienvenido a FilmFinder</h1>
+      <h1 class="titulo_inicio">
+        Bienvenido a <span class="segundo_titulo">FilmFinder</span>
+      </h1>
       <p class="epigrafe">
         Nuestro objetivo es que puedas encontrar tu pelicula o serie favorita en
         nuestro amplio catalogo. Tu zona segura para asegurar tu pelicula!
@@ -26,90 +34,21 @@
       <a href="catalogo.html" class="boton_ver_catalogo">Ver Catalogo</a>
     </div>
     <!--Seccion Peliculas Destacadas -->
-    <section class="seccion_peliculas">
-      <h2 class="texto_destacadas">
-        Peliculas
-        <p class="segundo_texto">&nbsp;Destacadas!</p>
-      </h2>
-      <div class="contenedor_central">
-        <div class="contenedor_cards">
-          <!--Card 1-->
-          <div class="card">
-            <div class="contenedor_imagen">
-              <a href="index.html" title="Pelicula">
-                <img
-                  src="../img/peliculas/dune_two.jpg"
-                  alt="Dune two"
-                  class="foto_pelicula"
-                />
-                <h3 class="estreno">2024</h3>
-              </a>
-            </div>
-            <h2 class="titulo">Dune Two</h2>
-          </div>
-          <!--Card 2-->
-          <div class="card">
-            <div class="contenedor_imagen">
-              <a href="index.html" title="Pelicula">
-                <img
-                  src="../img/peliculas/god_kong.png"
-                  alt="Dune two"
-                  class="foto_pelicula"
-                />
-                <h3 class="estreno">2024</h3>
-              </a>
-            </div>
-            <h2 class="titulo">God x Kong</h2>
-          </div>
-          <!--Card 3-->
-          <div class="card">
-            <div class="contenedor_imagen">
-              <a href="index.html" title="Pelicula">
-                <img
-                  src="../img/peliculas/imaginary.jpg"
-                  alt="Dune two"
-                  class="foto_pelicula"
-                />
-                <h3 class="estreno">2024</h3>
-              </a>
-            </div>
-            <h2 class="titulo">Imaginary</h2>
-          </div>
-          <!--Card 4-->
-          <div class="card">
-            <div class="contenedor_imagen">
-              <a href="index.html" title="Pelicula">
-                <img
-                  src="../img/peliculas/norbit.jpg"
-                  alt="Dune two"
-                  class="foto_pelicula"
-                />
-                <h3 class="estreno">2024</h3>
-              </a>
-            </div>
-            <h2 class="titulo">Norbit</h2>
-          </div>
-          <!--Card 5-->
-          <div class="card">
-            <div class="contenedor_imagen">
-              <a href="index.html" title="Pelicula">
-                <img
-                  src="../img/peliculas/supercool.jpg"
-                  alt="Dune two"
-                  class="foto_pelicula"
-                />
-                <h3 class="estreno">2024</h3>
-              </a>
-            </div>
-            <h2 class="titulo">Super cool</h2>
-          </div>
-        </div>
-      </div>
+    <section>
+      <div id="peliculas_destacadas"></div>
     </section>
     <!--Seccion Formulario-->
-    <section>
-      <div>
-        <h3>Seccion Formulario</h3>
+    <section class="seccion_formulario">
+      <div class="contenedor_formulario">
+        <div class="contenedor_texto_formulario">
+          <h3 class="titulo_formulario">
+            A continuacion te dejamos un espacio
+            <p class="segundo_texto_formulario">
+              Para que nos cuentes lo que quieras!
+            </p>
+          </h3>
+        </div>
+        <div id="form"></div>
       </div>
     </section>
     <!--Footer-->

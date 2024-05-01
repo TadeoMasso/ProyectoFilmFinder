@@ -1,0 +1,24 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+  }
+  .contenedor_seccion_buscar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    height: 40vh;
+    align-items: center;
+    background-color: black;
+  }
+  .titulo_busqueda{
+    font-size: 50px;
+    color: white;
+  }
+  .texto_secundario{
+    color: blanchedalmond;
+  }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+  }

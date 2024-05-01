@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
+    <link rel="stylesheet" href="../css/paginas/pagina_pelicula.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      $(function () {
+        $("#footer").load("../componentes/footer.html");
+        $("#navbar").load("../componentes/navbar.html");
+      });
+    </script>
+    <title>Pagina Pelicula | FilmFinder</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <div id="navbar"></div>
+    <!--Inicio-->
+
+    <section>
+      <div class="contenedor">
+        <div class="fondo-img"></div>
+        <div class="parte-inferior-negra">
+          <div class="contenedor_card">
+            <div>
+              <img class="poster_pelicula"  src="../img/peliculas/dune_two.jpg" alt="peli" />
+            </div>
+            <div>
+              <h1>Dune Two</h1>
+              <p>Duracion</p>
+              <span>Atp</span>
+              <div>
+                <a target="_blank" href="youtube.com">Llevar al link</a>
+                <span>Reportar</span>
+              </div>
+
+              <div>
+                <span>Primera categoria</span>
+                <span>Segunda categoria</span>
+              </div>
+              <p>descripcion</p>
+              <div class="contenedor_general_elenco">
+                <div class="contenedor_elenco">
+                  <span class="puesto">Elenco: </span>
+                  <span class="elenco"> Nombre inventado</span>
+                  <span class="elenco"> Nombre inventado</span>
+                  <span class="elenco">  Nombre inventado</span>
+                </div>
+                <div class="contenedor_elenco">
+                  <span class="puesto">Director: </span>
+                  <span class="elenco"> Nombre inventado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <div id="footer"></div>
+  </body>
+</html>

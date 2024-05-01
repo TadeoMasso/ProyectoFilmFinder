@@ -1,0 +1,42 @@
+.contenedor_header {
+    background-color: rgb(148, 0, 74);
+    position: sticky; /* Mantendrá el Navbar en su posición original */
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contenedor_header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Ajusté la altura del encabezado */
+  }
+  
+  .logo img {
+    height: 150px; /* Ajusté el tamaño del logo */
+  }
+  
+  .ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .etiqueta_a {
+    margin: 0 15px;
+    padding: 10px; /* Aumenté el espacio interno */
+    font-size: 25px; /* Reduje el tamaño del texto */
+    text-decoration: none;
+    color: #fff; /* Cambié el color del texto a blanco */
+  }
+  
+  .etiqueta_a:hover {
+    background-color: rgba(250, 25, 96, 0.507); /* Cambié el color de fondo al pasar el ratón */
+    border-radius: 10px; /* Agregué un borde redondeado */
+  }

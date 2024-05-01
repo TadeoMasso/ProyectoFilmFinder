@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.svg" />
+    <link rel="stylesheet" href="../css/paginas/catalogo.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <script>
       $(function () {
         $("#footer").load("../componentes/footer.html");
         $("#navbar").load("../componentes/navbar.html");
+        $("#barra_busqueda").load("../componentes/barra_busqueda.html");
+        $("#grid_peliculas").load("../componentes/grid_peliculas.html");
+        $("#peliculas_destacadas").load("../componentes/peliculas_destacadas.html");
       });
     </script>
     <title>Catalogo | FilmFinder</title>
-</head>
-<body>
-<!--Navbar-->
-<div id="navbar"></div>
-
+  </head>
+  <body>
+    <!--Navbar-->
+    <div id="navbar"></div>
+    <!--Seccion Buscador-->
+    <section>
+      <div class="contenedor_seccion_buscar">
+        <h1 class="titulo_busqueda">Encontra tu <span class="texto_secundario">Pelicula!</span></h1>
+        <div class="contenedor_buscador" id="barra_busqueda"></div>
+      </div>
+    </section>
+    <!--Seccion Destacadas-->
+    <section>
+      <div id="peliculas_destacadas"></div>
+    </section>
+    <!--Seccion Grid-->
+    <section>
+      <div id="grid_peliculas"></div>
+    </section>
     <!--Footer-->
     <div id="footer"></div>
-</body>
+  </body>
 </html>

@@ -1,0 +1,77 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/*Titular*/
+.contenedor {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+/* Estilos para la imagen de fondo */
+.fondo-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Porcentaje que ocupa*/
+  background-image: url("../../img/fotos_recursos/fondo_dos.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* Asegura que la imagen esté por encima de otras capas */
+}
+/* Estilos para la parte inferior de color negro */
+.parte-inferior-negra {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: rgb(31, 30, 30);
+  z-index: 2;
+}
+.contenedor_card {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  /* z-index: 3; */
+  background-color: red;
+}
+
+.poster_pelicula {
+  border-radius: 2vh;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+/*Contenedor Elenco*/
+.contenedor_general_elenco {
+  display: flex;
+  background-color: blue;
+  height: 70px;
+  flex-direction: column;
+  padding: 7px;
+  justify-self: bottom;
+}
+.contenedor_elenco {
+  margin: 7px;
+}
+.puesto {
+  background-color: aqua;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+.elenco {
+  margin: 5px;
+  border-radius: 10px;
+  background-color: greenyellow;
+  font-size: 15px;
+  padding: 5px;
+}

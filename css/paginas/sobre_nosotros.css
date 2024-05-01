@@ -1,0 +1,115 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+.contenedor_acerca {
+  padding: 100px;
+  text-align: center;
+  color: #e4e4e4;
+  font-size: 18px;
+  background-image: url(../../img/fotos_recursos/fondo_formulario.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.719);
+}
+
+.texto_acerca{
+  width: 80%;
+  text-align: center;
+}
+
+.about {
+  display: inline-block; /* Cambia a display inline-block */
+  vertical-align: top; /* Alinea los elementos en la parte superior */
+  margin: 20px; /* Añade un poco de espacio entre los elementos */
+  margin-right: 10px;
+}
+.contenedor_titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo_acerca {
+  font-size: 40px;
+}
+.seccion_equipo {
+  padding: 60px;
+  text-align: center;
+  color: #e4e4e4;
+  font-size: 18px;
+
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.719);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedor_miembros_equipo {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 10px;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.miembro {
+  text-align: center;
+  margin-top: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.miembro img {
+  width: 200px; /* Establece el ancho de la imagen en automático */
+  height: 250px; /* Establece la altura de la imagen en automático */
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* .miembro img:hover{
+
+} */
+.link_redes{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size:35px;
+}
+/*Sector tecnologias*/
+.contenedor_tecnologias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-collapse: separate;
+  border-spacing: 10px;
+  width: 100%;
+  
+}
+.fila_tecnologias {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.span_tecnologias{
+  margin-bottom: 50px;
+}
+
+.interior_celda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+}
+.foto_tecnologia {
+  height: 150px;
+  width: 150px;
+}
+.herramientas {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/*Agregar cv's a modo de descarga al pararse sobre las imagenes(Agregar diseño)*/
+

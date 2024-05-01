@@ -1,0 +1,78 @@
+
+  /*Diseño Cards*/
+  .contenedor_central_grid {
+    padding: 64px;
+    background-color: #333;
+  }
+  
+  .contenedor_cards_grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; /* Define cinco columnas de tamaño automático */
+    grid-gap: 10px; /* Define el espacio entre las celdas */
+    justify-content: space-around;
+    height: 100%; /* Ajusta la altura al 100% del contenedor_central */
+  }
+  
+  .card_grid {
+    margin: 10px;
+    padding: auto;
+    width: 100%;
+  }
+  .card_grid:hover{
+    transform: scale(1.1)
+  }
+  .contenedor_imagen_grid {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    max-width: 260px;
+    max-height: 320px;
+  }
+  
+  .foto_pelicula_grid {
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+    height: 250px;
+    margin-top: 10px;
+    text-align: start;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  .foto_pelicula_grid:hover {
+    filter: blur(8px);
+    border: 2px solid black;
+    border-radius: 15px; 
+  }
+  .estreno_grid {
+    color: white;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    background-color: #fc1860;
+    border-radius: 10px 0px 0px 10px;
+    margin-bottom: 5px;
+    width: 70px;
+  }
+  .titulo_grid {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+  }
+  .opciones {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  width: 200px; /* Ajusta el ancho según sea necesario */
+}
+.opciones:focus {
+  outline: none;
+  border-color: #007bff; /* Cambia el color del borde al enfocar */
+}
+.opciones option {
+  font-size: 14px;
+}
