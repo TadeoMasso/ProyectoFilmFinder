@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/componentes/formulario.css" />
+  </head>
+  <body>
+    <section class="seccion_form">
+      <form action="">
+      <div class="form-register">
+        <input
+          class="controls"
+          type="text"
+          name="nombres"
+          id="nombres"
+          placeholder="Ingrese su Nombre"
+        />
+        <input
+          class="controls"
+          type="text"
+          name="apellidos"
+          id="apellidos"
+          placeholder="Ingrese su Apellido"
+        />
+        <input
+          class="controls"
+          type="email"
+          name="correo"
+          id="correo"
+          placeholder="Ingrese su Correo"
+        />
+        <select
+          title="selector_de_opciones"
+          name="razon"
+          id="razon"
+          class="opciones"
+        >
+          <option value="">Comentario</option>
+          <option value="RE">Reclamo</option>
+          <option value="PE">Pedido</option>
+          <option value="RES">Reseña</option>
+        </select>
+        <textarea
+          class="textarea"
+          name="mensaje"
+          id="mensaje"
+          placeholder="Deja tu mensaje"
+          maxlength="500"
+        ></textarea>
+        <div class="contenedor_boton">
+          <button type="submit" class="boton">Enviar</button>
+        </div>
+      </div>
+    </form>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+Definir Proyecto:
+1) Recomendador de peliculas / Video recomender
+
+Nombre:
+-FilmFinder-
+
+Paginas:
+1) Pagina  Principal(Titulo,breve descripcion, carrusel de contenido destacado, boton de inciar secion)
+2) Catalogo de peliculas y series(Todo el contenido, fltros de categorias [pelicula/serie, recomendaciones] buscador,
+contenido destacado, carrusel de contenido random, ordenar[orden alfabetico, año lanzamiento, puntuacion<>,categoria, duracion de pelicuals, series por episodios] )
+3)pagina propia de la pelicula(a completar el objeto)
+4)Nosotros(Texto de nosotros, texto de la app, fotos y redes texto sobre el dia a dia )
+
+Componentes:
+Navbar: logo, navegacion(pagina principal, catalogo, nosotros)
+Footer:logo, navegacion(pagina principal, catalogo, nosotros) traduccion de idioma
+SearchBar: buscar
+ScrollToTop: boton pa arriba
+
+Paleta de colores:
+-Rojo / negro (Netflix/Youtube/AppleMusic)
+-Colores resaltar.
+-Variaciones Blanco.
+-Efectos de diseños.
+
+Dudas a resolver:
+Uso de apis.
+Lenguaje a usar.
+
+
+Ejemplos:
+{
+nombre: ejemplo
+descripcion: ejemplo
+fecha: ejemplo
+duracion: ejemplo
+categoria: ejemplo
+linktriller: ejemplo 
+estrellas: 1
+}
+
