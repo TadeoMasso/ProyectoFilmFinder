@@ -12,16 +12,17 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 100vh;
+  height: 130vh;
 }
 /* Estilos para la imagen de fondo */
 .fondo-img {
-  position: absolute;
-  top: 0;
+  filter: blur(6px);
+  position: relative;
+  top: -30;
   left: 0;
   width: 100%;
-  height: 30%; /* Porcentaje que ocupa*/
-  background-image: url("../../img/fotos_recursos/fondo_dos.jpg");
+  height: 50%; /* Porcentaje que ocupa*/
+  background-image: url("../../img/peliculas/dune_two.jpg");
   background-size: cover;
   background-position: center;
   z-index: 1; /* Asegura que la imagen esté por encima de otras capas */
@@ -42,7 +43,7 @@ body {
   align-content: center;
   justify-content: center;
    z-index: 3;
-  background-color: rgb(77, 74, 74);
+  background-color: #181818;
 
 }
 
@@ -58,49 +59,55 @@ body {
 /*Contenedor Elenco*/
 .contenedor_general_elenco {
   display: flex;
-  background-color: blue;
+  background-color:#242424;
   height: 70px;
   flex-direction: column;
   padding: 7px;
   justify-self: bottom;
+  border-radius: 15px;
 }
 .contenedor_elenco {
   margin: 7px;
 }
 .puesto {
-  background-color: yellowgreen;
+  color: white;
+  background-color: #343434;
   border-radius: 10px;
-  padding: 5px;
+  padding: 6px;
   font-size: 15px;
 }
 .trailer_boton{
+  color: white;
   text-decoration: none;
-  background-color: rgb(233, 73, 41);
+  background-color: #333333;
   border-radius: 10px;
   font-size: 20px;
   margin: 3px;
-  padding: 3px;
+  padding: 8px;
 }
 .reportar_boton{
+  color: white;
   text-decoration: none;
-  background-color: rgb(233, 73, 41);
+  background-color: #333333;
   border-radius: 10px;
   font-size: 20px;
   margin: 3px;
-  padding: 3px;
+  padding: 8px;
 }
 .compartir_boton{
+  color: white;
   text-decoration: none;
-  background-color: rgb(233, 73, 41);
+  background-color: #333333;
   border-radius: 10px;
   font-size: 20px;
   margin: 3px;
-  padding: 3px;
+  padding: 8px;
 }
 .elenco {
+  color: white;
   margin: 5px;
   border-radius: 10px;
-  background-color: greenyellow;
+  background-color: #343434;
   font-size: 15px;
   padding: 5px;
 }
@@ -108,9 +115,8 @@ body {
   position: relative;
   font-size: 80px;
   margin-left:30px;
-  color: red;
-  /* top: -110px; */
-
+  color: rgb(255, 255, 255);
+ 
 }
 
 .div_datos{
@@ -118,20 +124,24 @@ body {
   top: -110px;
 }
 .contenedor_opciones{
-  background-color: pink;
+  
   padding: 10px;
 }
 .contenedor_opciones_a{
   margin-left: 20px;
-font-size: 23px;
+  font-size: 23px;
 }
+
+
+
 .edad{
-  background-color: chartreuse;
+  color: white;
   padding: 3px;
 }
 .contenedor_opciones_b{
   margin: 15px;
-  background-color: red;
+
+  
   width: fit-content;
 }
 
@@ -142,19 +152,28 @@ font-size: 23px;
 .genero{
   margin: 10px;
   font-size: 30px;
-  border-radius: 20px;
-  background-color: red;
-  border: 2px solid black;
-  padding: 5px;
+  border-radius: 17px;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 8px;
 }
 .linea{
-  margin: 10px;
+  margin: 19px;
   width: 70%;
 }
 .descripcion{
+  color: white;
   padding: 10px;
   font-size: 24px;
   width: 400px; 
   word-wrap: break-word; 
   margin-bottom: 20px;
+}
+
+.estreno_pelicula{
+  color: white;
+}
+
+.duracion_pelicula{
+  color: white;
 }
