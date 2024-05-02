@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/componentes/grid_peliculas.css" />
+    <script>
+      $(function () {
+        $("#paginacion").load("../componentes/paginacion.html");
+      });
+    </script>
     <title>grid_peliculas</title>
   </head>
   <body>
     <div class="contenedor_central_grid">
-      <div>
+      <div class="contenedor_filtros">
         <select
           title="selector_fecha_estreno"
           name="fecha"
           id="fecha"
-          class="opciones"
+          class="select_opciones"
+          
         >
-          <option value="all">Todas</option>
+          <option class="titulo_filtro" selected disabled> <strong>Estreno</strong></option>
+          <option value="">Todas</option>
           <option value="AS">Ascendente</option>
           <option value="DE">Descendente</option>
         </select>
@@ -23,9 +30,10 @@
           title="selector_rating"
           name="rating"
           id="rating"
-          class="opciones"
+          class="select_opciones"
         >
-          <option value="all">Todas</option>
+          <option class="titulo_filtro" selected disabled> <strong>Clasificacion</strong></option>
+          <option value="">Todas</option>
           <option value="1">1 Estrella</option>
           <option value="2">2 Estrellas</option>
           <option value="3">3 Estrellas</option>
@@ -36,9 +44,10 @@
           title="selector_categoria"
           name="categoria"
           id="categoria"
-          class="opciones"
+          class="select_opcion_categoria"
         >
-          <option value="all">Todas</option>
+        <option class="titulo_filtro" selected disabled> <strong>Categoria</strong></option>
+          <option value="">Todas</option>
           <option value="accion">Acción</option>
           <option value="aventura">Aventura</option>
           <option value="animacion">Animación</option>
@@ -281,6 +290,7 @@
           <h2 class="titulo_grid">Dune Two</h2>
         </div>
       </div>
+      <div id="paginacion"></div>
     </div>
   </body>
 </html>

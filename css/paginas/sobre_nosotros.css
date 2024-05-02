@@ -57,21 +57,40 @@
   display: inline-block;
   margin-right: 10px;
 }
+
 .miembro img {
-  width: 200px; /* Establece el ancho de la imagen en automático */
-  height: 250px; /* Establece la altura de la imagen en automático */
+  width: 200px; 
+  height: 250px; 
   overflow: hidden;
   object-fit: cover;
   border-radius: 10px;
+  position: relative; /* Necesario para el posicionamiento absoluto */
 }
-/* .miembro img:hover{
 
-} */
-.link_redes{
+.descargar-cv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+
+.miembro:hover .descargar-cv {
+  opacity: 1;
+}
+
+.link_redes {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size:35px;
+  font-size: 35px;
 }
+
+
 /*Sector tecnologias*/
 .contenedor_tecnologias {
   display: flex;
@@ -110,6 +129,9 @@
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.titulo_tecnologia{
+  text-decoration: none;
 }
 /*Agregar cv's a modo de descarga al pararse sobre las imagenes(Agregar diseño)*/
 

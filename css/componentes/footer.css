@@ -8,8 +8,9 @@
     padding: 20px;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center; 
+   
   }
 .contenedor_links {
   display: flex;
@@ -17,7 +18,6 @@
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  text-decoration: none;
   color: #fff;
 }
 .contenedor_redes {
@@ -26,7 +26,6 @@
   align-items: center;
   flex-direction: column;
   font-size: 18px;
-  text-decoration: none;
   color: #fff;
 }
 .soporte {
@@ -35,14 +34,13 @@
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  text-decoration: none;
   color: #fff;
   align-items: center;
   padding-left: 50px;
 }
 .etiqueta_b {
-  text-decoration: none;
   color: #fc1860;
+  text-decoration: none;
 }
 .etiqueta_b:hover {
   color: #fff;
