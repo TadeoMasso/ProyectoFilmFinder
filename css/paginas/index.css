@@ -1,9 +1,6 @@
 * {
   scroll-behavior: smooth;
   margin: 0;
-}
-
-body {
   font-family: 'Nunito', sans-serif;
 }
 /*Titular*/
@@ -68,16 +65,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
-  
 }
 .contenedor_texto_formulario{
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  
-
-
 }
 

@@ -1,3 +1,15 @@
-.a{
-    color: red;
-}
+.contenedor {
+    display: flex;
+  }
+  .texto {
+    flex: 1;
+    padding: 10px;
+  }
+  .imagen {
+    flex: 1;
+    padding: 10px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
