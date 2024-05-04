@@ -3,6 +3,9 @@
   margin: 0;
   font-family: "Nunito", sans-serif;
 }
+body{
+  background-color: #181818;
+}
 .contenedor_acerca {
   padding: 100px;
   text-align: center;
@@ -118,13 +121,20 @@
   
 }
 .foto_tecnologia {
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: 100px;
+  background-color: #e4e4e4;
+  padding: 20px;
+  border-radius: 25%;
+  background-image: url(../../img/fotos_recursos/fondo_formulario.jpg);
+  box-shadow: inset 0 0 0 2000px #181818af;
 }
 .herramientas {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  background-color: #181818;
+  color: #fff;
 }
 .titulo_tecnologia{
   text-decoration: none;
