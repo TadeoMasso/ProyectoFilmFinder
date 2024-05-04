@@ -67,29 +67,31 @@
   display: flex;
 }
 .select_opciones {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
   padding: 5px 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #181818;
   border-radius: 15px;
-  background-color: #fff;
-  color: #333;
+  background-color: #fc1860;
+  color: #ffffff;
   width: 200px;
   margin: 10px;
 }
 .select_opciones:focus {
-  outline: none;
-  background-color: pink;
+  
+  color: #ffffff;
+  background-color:#fc1860;
 }
+
 .select_opcion_categoria {
   display: flex;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
   padding: 5px 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #181818;
   border-radius: 15px;
-  background-color: #fff;
-  color: #333;
+  background-color: #fc1860;
+  color: #ffffff;
   width: 200px;
   margin-left: auto;
   margin-top: 10px;

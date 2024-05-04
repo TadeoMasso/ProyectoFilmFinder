@@ -1,15 +1,28 @@
 .contenedor {
     display: flex;
+    flex-direction: row;
+    background-color: #fc1860;
   }
+  .textos_recomendacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+  }
+  .primer_texto_recomendacion{
+    color: #ffffff;
+  }
+
   .texto {
     flex: 1;
     padding: 10px;
+    
   }
-  .imagen {
-    flex: 1;
-    padding: 10px;
-  }
+
   img {
-    max-width: 100%;
+    flex: 1;
+    border-radius: 35px;
+    padding: 10px;
+    max-width: 96%;
     height: auto;
   }
