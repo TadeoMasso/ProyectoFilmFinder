@@ -17,8 +17,14 @@
     height: 100%; /* Ajusté la altura del encabezado */
   }
   
+  .logo {
+    max-width: 150px; /* Ancho máximo deseado para el logo */
+    height: auto; /* Para mantener la proporción de la imagen */
+  }
+
   .logo img {
     height: 150px; /* Ajusté el tamaño del logo */
+    height: auto;
   }
   
   .ul {
