@@ -28,11 +28,11 @@
 
 .controls {
   width: 100%;
-  background: rgb(158, 26, 92);
+  background: #993e64;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 16px;
-  border: 1px solid #a41fc5;
+  border: 1px solid #500027;
   font-family: "calibri";
   font-size: 18px;
   color: white;
@@ -43,11 +43,11 @@
 }
 .textarea {
   width: 100%;
-  background: rgb(158, 26, 92);
+  background: #993e64;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 16px;
-  border: 1px solid #a41fc5;
+  border: 1px solid #500027;
   font-family: "calibri";
   font-size: 18px;
   color: white;
@@ -75,7 +75,7 @@
 
 .form-register  {
   width: 100%;
-  background: #fc1860;
+  background: #751f46;
   border: none;
   padding: 12px;
   color: white;
@@ -144,11 +144,11 @@
 }
 .opciones {
   width: 100%;
-  background: rgb(158, 26, 92);
+  background: #993e64;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 16px;
-  border: 1px solid #a41fc5;
+  border: 1px solid #500027;
   font-family: "calibri";
   font-size: 18px;
   color: white;

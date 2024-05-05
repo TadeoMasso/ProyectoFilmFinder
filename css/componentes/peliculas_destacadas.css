@@ -1,6 +1,6 @@
 .seccion_peliculas {
     padding-bottom: 50px;
-    background-color: rgba(255, 255, 255, 0.584);
+    background-color: #490d28;
   }
   .texto_destacadas {
     padding-top: 10px;
@@ -11,7 +11,7 @@
     color: black;
   }
   .segundo_texto {
-    color: #fc1860;
+    color: #fff;
   }
   /*Diseño Cards*/
   .contenedor_central {
