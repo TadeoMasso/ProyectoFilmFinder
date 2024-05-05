@@ -8,10 +8,10 @@
     display: flex;
     flex-direction: row;
     margin-left: 80px;
-    color: black;
+    color: #fff;
   }
   .segundo_texto {
-    color: #fff;
+    color:#fc1860;
   }
   /*Diseño Cards*/
   .contenedor_central {
@@ -65,6 +65,6 @@
   }
   .titulo {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #fff;
     font-size: 25px;
   }
