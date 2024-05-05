@@ -10,7 +10,7 @@ body{
   padding: 100px;
   text-align: center;
   color: #e4e4e4;
-  font-size: 18px;
+  font-size: 20px;
   background-image: url(../../img/fotos_recursos/fondo_formulario.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,6 +100,14 @@ body{
   border-spacing: 10px;
   width: 100%;
   
+.textos_tecnologias{
+  /* margin-top: 10px; */
+  margin: 10px;
+  font-size: 21px;
+  width: 80%;
+    
+}
+
 }
 .fila_tecnologias {
   display: flex;
@@ -110,6 +118,7 @@ body{
 
 .span_tecnologias{
   margin-bottom: 50px;
+  font-size: 22px;
 }
 
 .interior_celda {
@@ -118,6 +127,8 @@ body{
   align-items: center;
   justify-content: center;
   width: 100%;
+
+
   
 }
 .foto_tecnologia {
@@ -131,13 +142,30 @@ body{
 }
 .herramientas {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   background-color: #181818;
   color: #fff;
+  background-image: url(../../img/fotos_recursos/fondo_tecnologias.jpg);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.719);
 }
 .titulo_tecnologia{
   text-decoration: none;
+  font-size: 25px;
+  margin-top: 7px;
 }
+
+.barra_sobre_nosotros{
+  border: none; /* Elimina el borde predeterminado del hr */
+  height: 3px; /* Establece la altura del hr */
+  background: linear-gradient(to right, rgba(0, 207, 255, 0.8), rgba(111, 0, 255, 0.5), rgba(192, 47, 108, 0.8)); /* Aplica el degradado */
+  filter: blur(10px);
+}
+
 /*Agregar cv's a modo de descarga al pararse sobre las imagenes(Agregar diseño)*/
 

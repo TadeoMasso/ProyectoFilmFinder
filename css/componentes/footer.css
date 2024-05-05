@@ -4,7 +4,7 @@
   position: relative;
   width: 100hv;
   background: #3586ff;
-  padding: 20px 50px;
+  padding: 30px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,4 +42,12 @@
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
+}
+
+.barra_footer{
+  width: 20px;
+  transform: rotate(-65deg);
+  border-radius: 100px;
+  border-style: solid;
+  color: azure;
 }

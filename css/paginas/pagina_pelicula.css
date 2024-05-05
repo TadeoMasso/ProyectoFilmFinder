@@ -68,13 +68,18 @@ body {
 }
 .contenedor_elenco {
   margin: 7px;
+  padding: 10px;
+  height: 35px;
+  /* background-color:#242424;
+  border-radius: 15px; */
+  
 }
 .puesto {
   color: white;
   background-color: #343434;
   border-radius: 10px;
   padding: 6px;
-  font-size: 15px;
+  font-size: 20px;
 }
 .trailer_boton{
   color: white;
@@ -108,7 +113,7 @@ body {
   margin: 5px;
   border-radius: 10px;
   background-color: #343434;
-  font-size: 15px;
+  font-size: 20px;
   padding: 5px;
 }
 .titulo_peli{
@@ -151,7 +156,7 @@ body {
 
 .genero{
   margin: 10px;
-  font-size: 30px;
+  font-size: 25px;
   border-radius: 17px;
   color: white;
   border: 2px solid rgb(255, 255, 255);
@@ -159,7 +164,8 @@ body {
 }
 .linea{
   margin: 19px;
-  width: 70%;
+  margin-top: 30px;
+  width: 63%;
 }
 .descripcion{
   color: white;
