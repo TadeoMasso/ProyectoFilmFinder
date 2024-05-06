@@ -23,8 +23,15 @@
     font-size: 19px;
   }
 
-.imagen_recomendacion{
-  display: flex;
-  padding: 20px;
-  border-radius: 20px;
-}
+  .imagen_recomendacion {
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden; /* Esto asegura que la imagen no se extienda más allá de los bordes redondeados */
+  }
+
+  .imagen_recomendacion img {
+    width: 100%;/* Ajusta el ancho de la imagen para que se adapte al contenedor */
+    height: auto;/* Permite que la altura de la imagen se ajuste automáticamente */
+    border-radius: 20px; /* Aplica el borde redondeado a la imagen */
+  }

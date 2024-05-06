@@ -1,0 +1,70 @@
+.seccion_peliculas {
+    padding-bottom: 50px;
+    background-color: #fc1860;
+  }
+  .texto_destacadas {
+    padding-top: 10px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    color: #000000;
+  }
+  .segundo_texto {
+    color:#ffffff;
+  }
+  /*Diseño Cards*/
+  .contenedor_central {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor_cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+  }
+  .card {
+    margin: 10px;
+  }
+  .card:hover{
+    transform: scale(1.1)
+  }
+  .contenedor_imagen {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    max-width: 260px;
+    max-height: 320px;
+  }
+  
+  .foto_pelicula {
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+    height: 250px;
+    margin-top: 10px;
+    text-align: start;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  .foto_pelicula:hover {
+    filter: blur(8px);
+    border: 2px solid black;
+    border-radius: 15px; 
+  }
+  .estreno {
+    color: #ffffff;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    background-color:#000000;
+    border-radius: 10px 0px 0px 10px;
+    margin-bottom: 5px;
+    width: 70px;
+  }
+  .titulo {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+  }

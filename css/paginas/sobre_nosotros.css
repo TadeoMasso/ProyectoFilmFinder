@@ -137,8 +137,9 @@ body{
   background-color: #e4e4e4;
   padding: 20px;
   border-radius: 25%;
-  background-image: url(../../img/fotos_recursos/fondo_formulario.jpg);
-  box-shadow: inset 0 0 0 2000px #181818af;
+  background-image: url(../../img/fotos_recursos/fondo_tecnologias_tres.png);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px #1818183c;
 }
 .herramientas {
   text-align: center;
@@ -148,11 +149,10 @@ body{
   padding-bottom: 30px;
   background-color: #181818;
   color: #fff;
-  background-image: url(../../img/fotos_recursos/fondo_tecnologias.jpg);
-  
+  background-image: url(../../img/fotos_recursos/fondo_tecnologias_dos.png);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.719);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.901);
 }
 .titulo_tecnologia{
   text-decoration: none;
@@ -162,7 +162,7 @@ body{
 
 .barra_sobre_nosotros{
   border: none; /* Elimina el borde predeterminado del hr */
-  height: 3px; /* Establece la altura del hr */
+  height: 9px; /* Establece la altura del hr */
   background: linear-gradient(to right, rgba(0, 207, 255, 0.8), rgba(111, 0, 255, 0.5), rgba(192, 47, 108, 0.8)); /* Aplica el degradado */
   filter: blur(10px);
 }
