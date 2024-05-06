@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
 
 .footer {
   position: relative;
   width: 100hv;
-  background: #3586ff;
+  background: #000000;
   padding: 30px 50px;
   display: flex;
   justify-content: center;
@@ -27,14 +27,14 @@
   color: #fff;
   margin: 0 10px;
   display: inline-block;
-  transition: 0.5s;
+  transition: 0.6s;
   text-decoration: none;
-  opacity: 0.75;
+  
   font-weight: 300;
 }
 
 .menu__link:hover {
-  opacity: 1;
+  color: #fc1860;
 }
 
 .footer p {
@@ -44,10 +44,3 @@
   font-weight: 300;
 }
 
-.barra_footer{
-  width: 20px;
-  transform: rotate(-65deg);
-  border-radius: 100px;
-  border-style: solid;
-  color: azure;
-}

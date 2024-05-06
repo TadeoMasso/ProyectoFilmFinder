@@ -1,6 +1,6 @@
 .seccion_peliculas {
     padding-bottom: 50px;
-    background-color: #490d28;
+    background-color: #000000;
   }
   .texto_destacadas {
     padding-top: 10px;
@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 80px;
-    color: #fff;
+    color: #ffffff;
   }
   .segundo_texto {
     color:#fc1860;
