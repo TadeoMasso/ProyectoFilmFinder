@@ -35,3 +35,17 @@
     height: auto;/* Permite que la altura de la imagen se ajuste automáticamente */
     border-radius: 20px; /* Aplica el borde redondeado a la imagen */
   }
+
+
+
+  @media screen and (max-width: 850px) {
+    .contenedor {
+     text-align: center;
+    }
+ 
+    .imagen_recomendacion {
+      display: none;
+
+    }
+
+  }

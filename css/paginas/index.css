@@ -72,3 +72,33 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+@media screen and (max-width: 850px) {
+  .contenedor_titulo {
+    padding: 20px;
+
+  }
+  .titulo_inicio {
+    text-align: start;
+    font-size: 50px;
+    color: white;
+  }
+  .segundo_titulo{
+    color: #fc1860;
+  }
+
+
+  .seccion_formulario{
+    padding: 20px;
+
+  }
+
+  .contenedor_formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

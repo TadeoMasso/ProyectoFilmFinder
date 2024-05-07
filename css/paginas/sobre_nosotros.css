@@ -169,3 +169,9 @@ body{
 
 /*Agregar cv's a modo de descarga al pararse sobre las imagenes(Agregar diseño)*/
 
+@media screen and (max-width: 850px) {
+
+  .contenedor_miembros_equipo {
+    flex-direction: column;
+  }
+}

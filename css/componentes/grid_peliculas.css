@@ -112,3 +112,127 @@
   justify-content: center;
 }
 
+
+
+
+  
+@media screen and (max-width: 850px) {
+
+ 
+/*Diseño Cards*/
+.contenedor_central_grid {
+  position: relative;
+  align-items: center;
+  padding: 15px;
+ background-color: #181818;
+
+}
+
+
+
+
+.contenedor_cards_grid {
+  display: grid;
+  grid-template-columns: auto auto auto; /* Define cinco columnas de tamaño automático */
+  grid-gap: 10px; /* Define el espacio entre las celdas */
+  justify-content: space-evenly;
+  height: 100%; /* Ajusta la altura al 100% del contenedor_central */
+  margin-top: 40px;
+}
+.card_grid {
+  margin: 10px;
+  padding: auto;
+  width: auto;
+}
+
+.contenedor_imagen_grid {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  max-width: 200px;
+  height: 320px;
+  padding: auto;
+}
+
+.foto_pelicula_grid {
+  display: flex;
+  border-radius: 15px 15px 0px 0px;
+  height: 250px;
+  margin-top: 10px;
+  text-align: start;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.foto_pelicula_grid:hover {
+  filter: brightness(0.5);
+  border-radius: 15px;
+}
+.estreno_grid {
+  color: white;
+  position: absolute;
+  bottom: 6px;
+  right: 1px;
+  background-color: #fc1860;
+  border-radius: 10px 0px 0px 10px;
+  margin-bottom: 5px;
+  width: 70px;
+}
+.titulo_grid {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  width: 100px;
+}
+.contenedor_filtros {
+  display: flex;
+}
+.select_opciones {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid #181818;
+  border-radius: 15px;
+  background-color: #fc1860;
+  color: #ffffff;
+  width: 200px;
+  margin: 10px;
+}
+.select_opciones:focus {
+  
+  color: #ffffff;
+  background-color:#fc1860;
+}
+
+.select_opcion_categoria {
+  display: flex;
+  position: absolute;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid #181818;
+  border-radius: 15px;
+  background-color: #fc1860;
+  color: #ffffff;
+  width: 200px;
+  margin-left: 10px;
+  margin-top:60px;
+  margin-bottom: 10px;
+
+}
+.opciones option {
+  font-size: 14px;
+}
+.titulo_filtro {
+  font-size: 20px;
+  color: black;
+}
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+}

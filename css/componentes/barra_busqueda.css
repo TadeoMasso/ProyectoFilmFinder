@@ -35,3 +35,19 @@
 #search-button:hover {
   background-color: #ff0066;
 }
+
+
+  
+@media screen and (max-width: 850px) {
+
+  .search-container {
+    margin-top: 50px;
+    width: auto;
+  }
+  
+  #search-box {
+    font-size: 18px;
+  }
+
+
+}

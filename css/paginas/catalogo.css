@@ -29,3 +29,13 @@
   body {
     font-family: 'Nunito', sans-serif;
   }
+
+  
+  @media screen and (max-width: 850px) {
+
+    .contenedor_seccion_buscar{
+      display: block;
+
+    }
+
+  }
