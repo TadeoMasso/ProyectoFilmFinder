@@ -3,6 +3,7 @@
     margin: 0;
   }
   .contenedor_seccion_buscar{
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -15,16 +16,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-
   }
+  
   .titulo_busqueda{
     font-size: 50px;
     color: white;
   }
   .texto_secundario{
     color: #fc1860;
-  }
+  } 
 
   body {
     font-family: 'Nunito', sans-serif;

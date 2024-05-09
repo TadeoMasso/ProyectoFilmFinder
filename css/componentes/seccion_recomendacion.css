@@ -40,35 +40,10 @@
   } 
 
 
-  .imagen_recomendacion ul{
-    display:flex;
-   
-    padding: 0%;
-    width: 100%;
-    animation: slide 20s infinite alternate ease-in-out;
-  }
-
-  .imagen_recomendacion li{
-    width: 100%;
-    list-style: none;
-    position: relative;
-  }
 
 
-  @keyframes slide{
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
-  
-    25%{margin-left: -104%;}
-    45%{margin-left: -104%;}
 
-    50%{margin-left: -205%;}
-    70%{margin-left: -205%;}
 
-    75%{margin-left: -307%;}
-    100%{margin-left:-307%;}
-
-  }
 
 
 
@@ -78,8 +53,8 @@
     }
  
     .imagen_recomendacion {
-      display: none;
-
+      display: flex;
+      align-items: center;
     }
 
   }
