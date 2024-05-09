@@ -148,7 +148,7 @@ body {
   margin: 15px;
 
   
-  width: fit-content;
+  width: "fit-content";
 }
 
 .contenedor_genero{

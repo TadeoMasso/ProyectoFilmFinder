@@ -1,30 +1,29 @@
-/*Diseño Cards*/
+/* Diseño Cards */
 .contenedor_central_grid {
   position: relative;
   align-items: center;
   padding: 60px;
- background-color: #181818;
-
+  background-color: #181818;
 }
-
-
-
 
 .contenedor_cards_grid {
   display: grid;
-  grid-template-columns: auto auto auto auto auto; /* Define cinco columnas de tamaño automático */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Utiliza un grid flexible para adaptarse al espacio disponible */
   grid-gap: 10px; /* Define el espacio entre las celdas */
   justify-content: space-evenly;
   height: 100%; /* Ajusta la altura al 100% del contenedor_central */
 }
+
 .card_grid {
   margin: 10px;
   padding: auto;
   width: 100%;
 }
+
 .card_grid:hover {
   transform: scale(1.1);
 }
+
 .contenedor_imagen_grid {
   position: relative;
   display: inline-block;
@@ -44,10 +43,12 @@
   width: 100%;
   transition: all 0.3s ease;
 }
+
 .foto_pelicula_grid:hover {
   filter: brightness(0.5);
   border-radius: 15px;
 }
+
 .estreno_grid {
   color: white;
   position: absolute;
@@ -58,15 +59,21 @@
   margin-bottom: 5px;
   width: 70px;
 }
+
 .titulo_grid {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 25px;
 }
+
 .contenedor_filtros {
   display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+  justify-content: center; /* Centra los elementos */
 }
-.select_opciones {
+
+.select_opciones,
+.select_opcion_categoria {
   font-family: "Nunito", sans-serif;
   font-size: 20px;
   padding: 5px 10px;
@@ -77,34 +84,22 @@
   width: 200px;
   margin: 10px;
 }
-.select_opciones:focus {
-  
+
+.select_opciones:focus,
+.select_opcion_categoria:focus {
   color: #ffffff;
-  background-color:#fc1860;
+  background-color: #fc1860;
 }
 
-.select_opcion_categoria {
-  display: flex;
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-  padding: 5px 10px;
-  border: 1px solid #181818;
-  border-radius: 15px;
-  background-color: #fc1860;
-  color: #ffffff;
-  width: 200px;
-  margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
 .opciones option {
   font-size: 14px;
 }
+
 .titulo_filtro {
   font-size: 20px;
   color: black;
 }
+
 .pagination {
   text-align: center;
   margin-top: 20px;
@@ -112,127 +107,31 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+  /* Ajustes para pantallas grandes */
+  .contenedor_cards_grid {
+    grid-template-columns: repeat(5, 1fr); /* Cambiar a cinco columnas en pantallas grandes */
+  }
+}
 
-
-
-  
 @media screen and (max-width: 850px) {
-
- 
-/*Diseño Cards*/
-.contenedor_central_grid {
-  position: relative;
-  align-items: center;
-  padding: 15px;
- background-color: #181818;
-
+  /* Ajustes para pantallas medianas */
+  .contenedor_cards_grid {
+    grid-template-columns: repeat(3, 1fr); /* Mantener tres columnas en pantallas medianas */
+  }
 }
 
+@media screen and (max-width: 480px) {
+  /* Ajustes para pantallas pequeñas */
+  .contenedor_central_grid {
+    padding: 15px;
+  }
 
+  .contenedor_cards_grid {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas muy pequeñas */
+  }
 
-
-.contenedor_cards_grid {
-  display: grid;
-  grid-template-columns: auto auto auto; /* Define cinco columnas de tamaño automático */
-  grid-gap: 10px; /* Define el espacio entre las celdas */
-  justify-content: space-evenly;
-  height: 100%; /* Ajusta la altura al 100% del contenedor_central */
-  margin-top: 40px;
-}
-.card_grid {
-  margin: 10px;
-  padding: auto;
-  width: auto;
-}
-
-.contenedor_imagen_grid {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  overflow: hidden;
-  max-width: 200px;
-  height: 320px;
-  padding: auto;
-}
-
-.foto_pelicula_grid {
-  display: flex;
-  border-radius: 15px 15px 0px 0px;
-  height: 250px;
-  margin-top: 10px;
-  text-align: start;
-  width: 100%;
-  transition: all 0.3s ease;
-}
-.foto_pelicula_grid:hover {
-  filter: brightness(0.5);
-  border-radius: 15px;
-}
-.estreno_grid {
-  color: white;
-  position: absolute;
-  bottom: 6px;
-  right: 1px;
-  background-color: #fc1860;
-  border-radius: 10px 0px 0px 10px;
-  margin-bottom: 5px;
-  width: 70px;
-}
-.titulo_grid {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  width: 100px;
-}
-.contenedor_filtros {
-  display: flex;
-}
-.select_opciones {
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-  padding: 5px 10px;
-  border: 1px solid #181818;
-  border-radius: 15px;
-  background-color: #fc1860;
-  color: #ffffff;
-  width: 200px;
-  margin: 10px;
-}
-.select_opciones:focus {
-  
-  color: #ffffff;
-  background-color:#fc1860;
-}
-
-.select_opcion_categoria {
-  display: flex;
-  position: absolute;
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-  padding: 5px 10px;
-  border: 1px solid #181818;
-  border-radius: 15px;
-  background-color: #fc1860;
-  color: #ffffff;
-  width: 200px;
-  margin-left: 10px;
-  margin-top:60px;
-  margin-bottom: 10px;
-
-}
-.opciones option {
-  font-size: 14px;
-}
-.titulo_filtro {
-  font-size: 20px;
-  color: black;
-}
-.pagination {
-  text-align: center;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-
+  .contenedor_imagen_grid {
+    text-align: center; /* Centrar la imagen */
+  }
 }
