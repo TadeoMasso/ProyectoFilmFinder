@@ -28,6 +28,24 @@ if (window.matchMedia("(min-width: 768px)").matches) {
         }
     });
 
+     // Logica para moverte hacia la izquierda
+     $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+        if (scrollPosition > 0) {
+            scrollPosition -= cardWidth;
+            $("#carouselExampleControls .carousel-inner").animate(
+                { scrollLeft: scrollPosition },
+                60
+            );
+        } else {
+            // Si estamos en la primera diapositiva, vamos al último elemento
+            scrollPosition = carouselWidth - cardWidth * 4;
+            $("#carouselExampleControls .carousel-inner").animate(
+                { scrollLeft: scrollPosition },
+                60
+            );
+        }
+    });
+
 } else {
     $(multipleCardCarousel).addClass("slide");
 }
