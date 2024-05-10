@@ -9,11 +9,11 @@ body {
 }
 
 /*Titular*/
-.contenedor {
+.contenedor_padre {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 100vh;
+  height: 1150px;
 }
 /* Estilos para la imagen de fondo */
 .fondo-img {
@@ -43,9 +43,8 @@ body {
   flex-direction: row;
   align-content: center;
   justify-content: center;
-   z-index: 3;
+  z-index: 3;
   background-color: #181818;
-
 }
 
 .poster_pelicula {
@@ -54,27 +53,30 @@ body {
   position: relative;
   border-radius: 2vh;
   box-shadow: 0px 0px 20px rgb(0, 0, 0);
-   
 }
 
 /*Contenedor Elenco*/
+
 .contenedor_general_elenco {
   display: flex;
-  background-color:#242424;
+  background-color: #242424;
   height: 70px;
   flex-direction: column;
-  padding: 7px;
+  padding: 0px;
   justify-self: bottom;
+  justify-content: center;
   border-radius: 15px;
+  margin: 0px;
 }
+
 .contenedor_elenco {
   margin: 7px;
-  padding: 10px;
+
   height: 35px;
-  /* background-color:#242424;
-  border-radius: 15px; */
-  
+
+  border-radius: 15px;
 }
+
 .puesto {
   color: white;
   background-color: #343434;
@@ -82,7 +84,8 @@ body {
   padding: 6px;
   font-size: 20px;
 }
-.trailer_boton{
+
+.trailer_boton {
   color: white;
   text-decoration: none;
   background-color: #333333;
@@ -91,7 +94,7 @@ body {
   margin: 3px;
   padding: 8px;
 }
-.reportar_boton{
+.reportar_boton {
   color: white;
   text-decoration: none;
   background-color: #333333;
@@ -100,7 +103,7 @@ body {
   margin: 3px;
   padding: 8px;
 }
-.compartir_boton{
+.compartir_boton {
   color: white;
   text-decoration: none;
   background-color: #333333;
@@ -111,51 +114,51 @@ body {
 }
 .elenco {
   color: white;
-  margin: 5px;
+  margin: 15px;
   border-radius: 10px;
   background-color: #343434;
   font-size: 20px;
   padding: 5px;
 }
-.titulo_peli{
+.titulo_peli {
   position: relative;
   font-size: 80px;
-  margin-left:30px;
+  margin-left: 30px;
   color: rgb(255, 255, 255);
- 
 }
 
-.div_datos{
+.div_datos {
   position: relative;
   top: -110px;
 }
-.contenedor_opciones{
-  
+.contenedor_opciones {
   padding: 10px;
+  display: flex;
+  flex-direction: row;
+
 }
-.contenedor_opciones_a{
+.contenedor_opciones_a {
   margin-left: 20px;
   font-size: 23px;
 }
 
-
-
-.edad{
+.edad {
   color: white;
   padding: 3px;
 }
-.contenedor_opciones_b{
+.contenedor_opciones_b {
   margin: 15px;
 
-  
   width: "fit-content";
 }
 
-.contenedor_genero{
+.contenedor_genero {
   margin: 20px;
+  display: flex;
+
 }
 
-.genero{
+.genero {
   margin: 10px;
   font-size: 25px;
   border-radius: 17px;
@@ -163,24 +166,97 @@ body {
   border: 2px solid rgb(255, 255, 255);
   padding: 8px;
 }
-.linea{
+.linea {
   margin: 19px;
   margin-top: 30px;
   width: 63%;
 }
-.descripcion{
+
+.estreno_pelicula {
+  color: white;
+}
+
+.duracion_pelicula {
+  color: white;
+}
+
+.contenedor_descripcion{
   color: white;
   padding: 10px;
   font-size: 24px;
-  width: 400px; 
-  word-wrap: break-word; 
+  width: 100%;
+  word-wrap: break-word;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+
 }
 
-.estreno_pelicula{
-  color: white;
+.descripcion{
+  width: 80%;
 }
 
-.duracion_pelicula{
-  color: white;
-}
+
+
+@media screen and (max-width: 850px) {
+  .contenedor_card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor_elenco{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor_padre {
+    height: 1800px;
+  }
+
+  .parte-inferior-negra {
+    height: 70%;
+  }
+
+  .contenedor_genero {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .genero {
+    font-size: 20px;
+  }
+
+  .descripcion{
+    text-align: center;
+    
+  }
+
+  .contenedor_linea {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedor_opciones{
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .puesto{
+    font-size: 17px;
+    padding: auto;
+  }
+
+  .elenco{
+    font-size: 17px;
+    padding: auto;
+  }
+
+  .contenedor_padre_elenco{
+    display: block;
+  }
+  
+ }

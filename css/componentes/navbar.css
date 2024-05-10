@@ -34,9 +34,9 @@ nav{
 
 .li_enlace{
   color :#fff;
-  font-size: 25px;
+  font-size: 30px;
   padding: 15px 50px ; /* separa: inicio - catalogo - sobre nosotros (ni idea que separa el primero,despues vemos)*/
-
+  text-decoration: none;
 
 }
  .li_enlace:hover{

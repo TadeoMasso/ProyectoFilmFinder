@@ -119,7 +119,7 @@
   padding-top: 10px;
   font-size: 40px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 80px; 
 
   color: #ffffff;
@@ -130,6 +130,7 @@
 }
 .carousel-inner {
   padding: 2em;
+  
 }
 .card {
   margin: 0 0.5em;
@@ -157,13 +158,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
   /* align-self: center; */
 }
 .card img {
   max-height: 100%;
   border-radius:15px
 }
-img:hover{
+.card img:hover{
   filter:blur(8px);
   transition:0.2s;
 }
@@ -196,7 +198,6 @@ img:hover{
   display:flex;
   align-content:center;
   flex-direction:end;
-  margin-top: 10px;
   background:black;
 }
 
@@ -210,9 +211,23 @@ img:hover{
   .carousel-inner {
     display: flex;
   }
+
+  
 }
 @media (max-width: 767px) {
   .card .img-wrapper {
     height: 17em;
   }
+  .main_container h1{
+    flex-direction: column;
+  }
+
+  .carousel-inner {
+    display: flex;
+    
+  }
+
+
+
+
 }
