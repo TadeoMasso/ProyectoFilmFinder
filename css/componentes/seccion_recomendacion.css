@@ -38,5 +38,11 @@
 
   .texto {
     margin-top: 10px; /* Agregar margen superior al texto en pantallas más pequeñas */
+    width: 95%;
+    font-size: 15px;
+    
+  }
+  .primer_texto_recomendacion{
+    font-size: 35px;
   }
 }

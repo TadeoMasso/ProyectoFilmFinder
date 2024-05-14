@@ -8,17 +8,18 @@
   align-items: start;
   justify-content: start;
   justify-items: start;
+  width: 100%;
 }
 .form-register {
   width: 400px;
   background: #5a1437;
   padding: 30px;
   margin: auto;
-  margin-top: 100px;
   border-radius: 15px;
   font-family: "calibri";
   display: flex;
   flex-direction: column;
+  color: #FFF;
 }
 
 .form-register h4 {
@@ -51,7 +52,6 @@
   font-family: "calibri";
   font-size: 18px;
   color: white;
-  width: 340px;
   height: 200px;
 }
 
@@ -73,16 +73,6 @@
   text-decoration: underline;
 }
 
-.form-register  {
-  width: 100%;
-  background: #751f46;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
-  border-radius: 10px;
-}
 .wrapper{
   position: fixed;
   top: 50%;
@@ -159,6 +149,7 @@
 .terminos{
   margin-bottom: 10px;
   text-align: center;
+  
 }
 
 
@@ -168,5 +159,12 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
+  }
+}
+@media (min-width:320px) and (max-width:600px){
+  .form-register {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
   }
 }

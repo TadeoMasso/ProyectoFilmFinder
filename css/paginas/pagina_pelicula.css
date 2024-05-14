@@ -125,21 +125,28 @@ body {
   font-size: 80px;
   margin-left: 30px;
   color: rgb(255, 255, 255);
+  
 }
 
 .div_datos {
   position: relative;
   top: -110px;
+  
 }
 .contenedor_opciones {
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: start;
+
 
 }
 .contenedor_opciones_a {
   margin-left: 20px;
   font-size: 23px;
+  display: flex;
+  flex-direction: row;
+  
 }
 
 .edad {
@@ -148,8 +155,10 @@ body {
 }
 .contenedor_opciones_b {
   margin: 15px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
 
-  width: "fit-content";
 }
 
 .contenedor_genero {
@@ -212,7 +221,8 @@ body {
   }
 
   .contenedor_padre {
-    height: 1800px;
+    height: 2300px;
+    
   }
 
   .parte-inferior-negra {
@@ -259,4 +269,17 @@ body {
     display: block;
   }
   
+  .titulo_peli{
+    font-size:50px;
+  }
+  .contenedor_opciones_b {
+    margin: 5px;
+  }
+  .contenedor_opciones_b a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
  }

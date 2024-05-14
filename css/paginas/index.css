@@ -226,7 +226,13 @@
     display: flex;
     
   }
-
+  .seccion_formulario{
+    background-image: url(../../img/fotos_recursos/fondo_dos.jpg);
+    padding: 40px;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.801);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 
 

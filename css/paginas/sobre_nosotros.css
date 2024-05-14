@@ -1,13 +1,14 @@
 * {
   scroll-behavior: smooth;
   margin: 0;
+  padding: 0;
   font-family: "Nunito", sans-serif;
 }
 body{
   background-color: #181818;
 }
 .contenedor_acerca {
-  padding: 100px;
+  
   text-align: center;
   color: #e4e4e4;
   font-size: 20px;
@@ -32,10 +33,10 @@ body{
   align-items: center;
 }
 .titulo_acerca {
-  font-size: 40px;
+  font-size: 45px;
 }
 .seccion_equipo {
-  padding: 60px;
+  /* padding: 60px; */
   text-align: center;
   color: #e4e4e4;
   font-size: 18px;
@@ -99,18 +100,22 @@ body{
   border-collapse: separate;
   border-spacing: 10px;
   width: 100%;
-  
+}
+
 .textos_tecnologias{
   /* margin-top: 10px; */
   margin: 10px;
   font-size: 21px;
-  width: 80%;
+  width: 100%;
+  word-wrap: break-word;
+  
     
 }
 
-}
+
 .fila_tecnologias {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   width: 100%;
   margin: 20px;
@@ -126,11 +131,10 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-
-
-  
+  width: 50%;
+  height: 100%;
 }
+
 .foto_tecnologia {
   height: 100px;
   width: 100px;
@@ -154,6 +158,7 @@ body{
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.901);
 }
+
 .titulo_tecnologia{
   text-decoration: none;
   font-size: 25px;
@@ -174,4 +179,32 @@ body{
   .contenedor_miembros_equipo {
     flex-direction: column;
   }
+}
+
+
+@media (max-width: 600px) and (min-width: 320px) {
+
+  .contenedor_titulo {
+    margin: 10px;
+    
+  }
+
+  .contenedor_tecnologias{
+    border-spacing: 5px;
+  }
+
+  .fila_tecnologias{
+    margin: 5px;
+  }
+
+  .textos_tecnologias{
+    font-size: 17px;
+    width: auto;
+    
+  }
+
+  .interior_celda{
+    height: 100%;
+  }
+
 }

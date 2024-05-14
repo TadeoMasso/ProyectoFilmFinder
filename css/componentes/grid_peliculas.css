@@ -12,12 +12,13 @@
   grid-gap: 10px; /* Define el espacio entre las celdas */
   justify-content: space-evenly;
   height: 100%; /* Ajusta la altura al 100% del contenedor_central */
+
 }
 
 .card_grid {
   margin: 10px;
   padding: auto;
-  width: 100%;
+  width: 150px;
 }
 
 .card_grid:hover {
@@ -107,6 +108,8 @@
   justify-content: center;
 }
 
+
+
 @media screen and (max-width: 1200px) {
   /* Ajustes para pantallas grandes */
   .contenedor_cards_grid {
@@ -125,13 +128,37 @@
   /* Ajustes para pantallas pequeñas */
   .contenedor_central_grid {
     padding: 15px;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    
   }
 
   .contenedor_cards_grid {
     grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas muy pequeñas */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    place-content: center;
+
   }
 
   .contenedor_imagen_grid {
     text-align: center; /* Centrar la imagen */
+  }
+  .contenedor_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    
+  }
+  .pagination {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
   }
 }
