@@ -31,6 +31,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 95%;
 }
 .titulo_acerca {
   font-size: 45px;
