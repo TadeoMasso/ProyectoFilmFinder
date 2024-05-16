@@ -38,6 +38,12 @@ function validarNombre() {
     if (nombre === '') {
         document.getElementById('error_nombre').textContent = 'Nombre incorrecto, no seas bobo';
         return false;
+    } 
+    const regexNombres = /^[a-zA-Z\s]+$/;
+
+    if (!regexNombres.test(nombre)) {
+        document.getElementById('error_nombre').textContent = 'Ingresa un nombre válido.';
+        return false;
     } else {
         document.getElementById('error_nombre').textContent = '';
         return true;
@@ -55,11 +61,18 @@ function validarApellidos() {
     if (apellidos === '') {
         document.getElementById('error_apellido').textContent = 'Apellido incorrecto, alto corki';
         return false;
+    } 
+    const regexApellidos = /^[a-zA-Z\s]+$/;
+
+    if (!regexApellidos.test(apellidos)) {
+        document.getElementById('error_apellido').textContent = 'Ingresa un apellido válido.';
+        return false;
     } else {
         document.getElementById('error_apellido').textContent = '';
         return true;
     }
 }
+
 
 function validarCorreo() {
     const correoInput = document.getElementById('correo');
@@ -84,12 +97,12 @@ function validarTextarea() {
     const textareaInput = document.getElementById('mensaje');
     const mensaje = textareaInput.value.trim();
 
-    if (!validarCampoVacio(textareaInput, 'error_mensaje')) {
+    if (!validarCampoVacio(textareaInput, 'error_mensaje') ) {
         return false;
     }
 
     if (mensaje === '') {
-        document.getElementById('error_mensaje').textContent = 'Por favor, ingrese un mensaje.';
+        document.getElementById('error_mensaje').textContent  = 'Por favor, ingrese un mensaje.';
         return false;
     } else {
         document.getElementById('error_mensaje').textContent = '';
