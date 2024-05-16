@@ -120,7 +120,7 @@ if (!terminosCheckbox.checked) {
 }
 
 // Si alguno de los campos no es válido, no envíes el formulario
-if (!nombreValido || !apellidosValidos || !correoValido || !mensajeValido) {
+if (!nombreValido || !apellidosValidos || !correoValido || !mensajeValido || !terminosCheckbox) {
   return;
 }
 
