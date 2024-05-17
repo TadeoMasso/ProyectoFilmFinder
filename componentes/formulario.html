@@ -7,72 +7,66 @@
     <link rel="stylesheet" href="../css/componentes/formulario.css" />
   </head>
   <body>
-
     <section class="seccion_form">
-
       <form action="">
-      <div class="form-register">
-        
-        <input
-          class="controls"
-          type="text"
-          name="nombres"
-          id="nombres"
-          placeholder="Ingrese su Nombre"
-        />
-        <div id="error_nombre" class="mensaje_error"></div>
-
-        <input
-          class="controls"
-          type="text"
-          name="apellidos"
-          id="apellidos"
-          placeholder="Ingrese su Apellido"
-        />
-        <div id="error_apellido" class="mensaje_error"></div>
-
-        <input
-          class="controls"
-          type="email"
-          name="correo"
-          id="correo"
-          placeholder="Ingrese su Correo"
-        />
-        <div id="error_correo" class="mensaje_error"></div>
-
-        <select
-          title="selector_de_opciones"
-          name="razon"
-          id="razon"
-          class="opciones"
-        >
-          <option value="">Comentario</option>
-          <option value="RE">Reclamo</option>
-          <option value="PE">Pedido</option>
-          <option value="RES">Reseña</option>
-        </select>
-        
-        <textarea
-          class="textarea"
-          name="mensaje"
-          id="mensaje"
-          placeholder="Deja tu mensaje"
-          maxlength="500"
-        ></textarea>
-        <div id="error_mensaje" class="mensaje_error"></div>
-        
-        <div class="terminos">
-         <label class="terminos" for="terminos">Deseo aceptar los términos y condiciones</label>
-        <input class="boton_radio" type="checkbox" id="terminos"></div> 
-        <div id="error_terminos" class="mensaje_error"></div>
-      
-        <div class="contenedor_boton">
-          <button type="submit" class="boton" onclick="validarFormulario()">Enviar</button>
+        <div class="form-register">
+          <input
+            class="controls"
+            type="text"
+            name="nombres"
+            id="nombres"
+            placeholder="Ingrese su Nombre"
+          />
+          <div id="error_nombre" class="mensaje_error"></div>
+          <input
+            class="controls"
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            placeholder="Ingrese su Apellido"
+          />
+          <div id="error_apellido" class="mensaje_error"></div>
+          <input
+            class="controls"
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Ingrese su Correo"
+          />
+          <div id="error_correo" class="mensaje_error"></div>
+          <select
+            title="selector_de_opciones"
+            name="razon"
+            id="razon"
+            class="opciones"
+          >
+            <option value="">Comentario</option>
+            <option value="RE">Reclamo</option>
+            <option value="PE">Pedido</option>
+            <option value="RES">Reseña</option>
+          </select>
+          <textarea
+            class="textarea"
+            name="mensaje"
+            id="mensaje"
+            placeholder="Deja tu mensaje"
+            maxlength="500"
+          ></textarea>
+          <div id="error_mensaje" class="mensaje_error"></div>
+          <div class="terminos">
+            <label class="terminos" for="terminos"
+              >Deseo aceptar los términos y condiciones</label
+            >
+            <input class="boton_radio" type="checkbox" id="terminos" />
+          </div>
+          <div id="error_terminos" class="mensaje_error"></div>
+          <div class="contenedor_boton">
+            <button type="submit" class="boton" onclick="validarFormulario()">
+              Enviar
+            </button>
+          </div>
         </div>
-      </div>
-
-    </form>
-
+      </form>
     </section>
     <script src="../js/validacion.js"></script>
   </body>

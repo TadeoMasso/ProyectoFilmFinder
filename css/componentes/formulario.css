@@ -19,14 +19,12 @@
   font-family: "calibri";
   display: flex;
   flex-direction: column;
-  color: #FFF;
+  color: #fff;
 }
-
 .form-register h4 {
   font-size: 22px;
   margin-bottom: 20px;
 }
-
 .controls {
   width: 100%;
   background: #993e64;
@@ -40,7 +38,7 @@
 }
 ::placeholder {
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 .textarea {
   width: 100%;
@@ -54,7 +52,6 @@
   color: white;
   height: 200px;
 }
-
 .form-register p {
   height: 40px;
   text-align: center;
@@ -62,25 +59,21 @@
   line-height: 40px;
   color: white;
 }
-
 .form-register a {
   color: white;
   text-decoration: none;
 }
-
 .form-register a:hover {
   color: white;
   text-decoration: underline;
 }
-
-.wrapper{
+.wrapper {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.boton{
+.boton {
   width: 200px;
   height: 40px;
   line-height: 40px;
@@ -92,43 +85,35 @@
   letter-spacing: 2px;
   text-align: center;
   position: relative;
-  transition: all .35s;
+  transition: all 0.35s;
   border-radius: 10px;
-  }
-
-  .contenedor_boton{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-
-.boton span{
+}
+.contenedor_boton {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.boton span {
   position: relative;
   z-index: 2;
   color: whit;
 }
-
-.boton:after{
+.boton:after {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:  rgb(158, 26, 92); /* Cambiado a blanco */
-  transition: all .35s;
+  background-color: rgb(158, 26, 92);
+  transition: all 0.35s;
   z-index: -1;
-  
 }
-
-
-
-.boton:hover{
+.boton:hover {
   color: #fff;
-  background-color:  rgb(158, 26, 92);
+  background-color: rgb(158, 26, 92);
 }
-
-.boton:hover:after{
+.boton:hover:after {
   width: 100%;
   color: white;
 }
@@ -143,23 +128,17 @@
   font-size: 18px;
   color: white;
 }
-
-
-
-.terminos{
+.terminos {
   margin-bottom: 10px;
   text-align: center;
-  
 }
-
 .mensaje_error {
   color: red;
   font-size: 20px;
   padding-bottom: 15px;
   text-align: center;
 }
-
-
+/*Responsive*/
 @media screen and (max-width: 850px) {
   .seccion_form {
     align-items: center;
@@ -167,7 +146,7 @@
     justify-items: center;
   }
 }
-@media (min-width:320px) and (max-width:600px){
+@media (min-width: 320px) and (max-width: 600px) {
   .form-register {
     width: 100%;
     padding: 10px;

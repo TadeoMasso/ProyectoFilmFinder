@@ -7,7 +7,6 @@
   border-radius: 20px;
   width: 650px;
 }
-
 #search-box {
   width:100%;
   height: 70px;
@@ -18,9 +17,7 @@
   outline: none;
   box-sizing: border-box;
   border-radius: 20px 0px 0px 20px;
-  
 }
-
 #search-button {
   width: 70px;
   height: 65px;
@@ -28,9 +25,7 @@
   border-style: none;
   border-radius: 15px;
   padding: 8px;
-
 }
-
 #search-button img{
   width: 100%;
   height: 100%;
@@ -38,19 +33,13 @@
 #search-button:hover {
   background-color: #ff0066;
 }
-
-
-  
+/*Responsive*/ 
 @media screen and (max-width: 850px) {
-
   .search-container {
     margin-top: 50px;
     width: auto;
   }
-  
   #search-box {
     font-size: 18px;
   }
-
-
 }

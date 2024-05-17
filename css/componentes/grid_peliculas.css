@@ -95,6 +95,7 @@
   display: flex;
   justify-content: center;
 }
+/*Responsive*/
 @media screen and (max-width: 1200px) {
   .contenedor_cards_grid {
     grid-template-columns: repeat(

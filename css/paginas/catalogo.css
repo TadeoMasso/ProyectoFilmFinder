@@ -1,46 +1,33 @@
 * {
-    scroll-behavior: smooth;
-    margin: 0;
-    
-    font-family: 'Nunito', sans-serif;
-    
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+.contenedor_seccion_buscar {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+  height: 400px;
+  align-items: center;
+  background-image: url(../../img/fotos_recursos/fondo_cuatro.jpg);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.719);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.titulo_busqueda {
+  font-size: 50px;
+  color: white;
+}
+.texto_secundario {
+  color: #fc1860;
+}
+/*Responsive*/
+@media screen and (max-width: 850px) {
+  .contenedor_seccion_buscar {
+    display: block;
   }
-
-
-
-
-  .contenedor_seccion_buscar{
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 30px;
-    height: 400px;
-    align-items: center;
-    background-image: url(../../img/fotos_recursos/fondo_cuatro.jpg);
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.719);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .titulo_busqueda{
-    font-size: 50px;
-    color: white;
-  }
-  .texto_secundario{
-    color: #fc1860;
-  } 
-
-  
-
-  
-  @media screen and (max-width: 850px) {
-
-    .contenedor_seccion_buscar{
-      display: block;
-
-    }
-
-  }
+}

@@ -1,103 +1,95 @@
-*{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
-body{
+body {
   background-color: #94004a;
 }
-nav{
+nav {
   height: 150px;
   width: 100%;
 }
-.enlace{
+.enlace {
   position: absolute;
   padding: 20px 50px;
-  /* centrar */
 }
-.logo{
+.logo {
   max-width: 100px;
   height: auto;
 }
-.ul_nav{
+.ul_nav {
   float: right;
   margin-right: 25px;
 }
-.li_nav{
+.li_nav {
   display: inline-block;
-  line-height: 150px; /* deja en medio el texto del menu */
+  line-height: 150px;
   margin: 0 25px;
-
 }
-
-.li_enlace{
-  color :#fff;
+.li_enlace {
+  color: #fff;
   font-size: 30px;
-  padding: 15px 50px ; /* separa: inicio - catalogo - sobre nosotros (ni idea que separa el primero,despues vemos)*/
+  padding: 15px 50px;
   text-decoration: none;
-
 }
- .li_enlace:hover{
-  background-color: #fa196081; /* Cambié el color de fondo al pasar el ratón */
-  border-radius: 10px; /* Agregué un borde redondeado */
-  transition: .5s;
+.li_enlace:hover {
+  background-color: #fa196081;
+  border-radius: 10px;
+  transition: 0.5s;
 }
-.check_boton{
-  font-size: 75px;/*icono menu*/
+.check_boton {
+  font-size: 75px;
   color: #fff;
   float: right;
   line-height: 150px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
-
 }
-#check{
+#check {
   display: none;
 }
-/* ajustar tamaño de pantalla tablet */
-@media  (max-width: 952px){
-    .enlace{
-      padding-left: 20px;
-    }
-    .li_enlace{
-      font-size: 16px;
-      padding: 15px 35px;/* para ver despues si se le quita o sigue*/
-    }
-    }
-
-/* ajustar tamaño de pantalla celular */
-@media (max-width:852px){
-    .check_boton{
-      display: block;
-      
-    }
-    .ul_nav{
-      position:absolute;
-      width: 100%;
-      height: 379vh;
-      background: #500027;
-      top: 150px;
-      left: -100%;
-      text-align: center;
-      transition: .5s;
-      z-index: 3;
-    }
-    .li_nav{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    .li_enlace{
-      font-size: 20px;
-    }
-    .li_enlace:hover{
-      background-color: none;
-      color: #fff;
-    }
-    #check:checked ~ .ul_nav{
-      left:0;
-    }
+/*Responsive*/
+@media (max-width: 952px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  .li_enlace {
+    font-size: 16px;
+    padding: 15px 35px;
+  }
+}
+@media (max-width: 852px) {
+  .check_boton {
+    display: block;
+  }
+  .ul_nav {
+    position: absolute;
+    width: 100%;
+    height: 379vh;
+    background: #500027;
+    top: 150px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 3;
+  }
+  .li_nav {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .li_enlace {
+    font-size: 20px;
+  }
+  .li_enlace:hover {
+    background-color: none;
+    color: #fff;
+  }
+  #check:checked ~ .ul_nav {
+    left: 0;
+  }
 }

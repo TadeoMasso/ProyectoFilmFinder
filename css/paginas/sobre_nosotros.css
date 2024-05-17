@@ -40,7 +40,6 @@ body {
   text-align: center;
   color: #e4e4e4;
   font-size: 18px;
-
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.719);
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,13 +166,12 @@ body {
   );
   filter: blur(10px);
 }
-
+/*Responsive*/
 @media screen and (max-width: 850px) {
   .contenedor_miembros_equipo {
     flex-direction: column;
   }
 }
-
 @media (max-width: 600px) and (min-width: 320px) {
   .contenedor_titulo {
     margin: 10px;
