@@ -154,10 +154,9 @@
 
 .mensaje_error {
   color: red;
-  margin-top: 5px;
   font-size: 20px;
-  
-  
+  padding-bottom: 15px;
+  text-align: center;
 }
 
 

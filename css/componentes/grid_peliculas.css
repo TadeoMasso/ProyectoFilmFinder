@@ -5,26 +5,24 @@
   padding: 60px;
   background-color: #181818;
 }
-
 .contenedor_cards_grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Utiliza un grid flexible para adaptarse al espacio disponible */
-  grid-gap: 10px; /* Define el espacio entre las celdas */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  );
+  grid-gap: 10px; 
   justify-content: space-evenly;
-  height: 100%; /* Ajusta la altura al 100% del contenedor_central */
-
+  height: 100%;
 }
-
 .card_grid {
   margin: 10px;
   padding: auto;
   width: 150px;
 }
-
 .card_grid:hover {
   transform: scale(1.1);
 }
-
 .contenedor_imagen_grid {
   position: relative;
   display: inline-block;
@@ -34,7 +32,6 @@
   max-height: 320px;
   padding: auto;
 }
-
 .foto_pelicula_grid {
   display: flex;
   border-radius: 15px 15px 0px 0px;
@@ -44,12 +41,10 @@
   width: 100%;
   transition: all 0.3s ease;
 }
-
 .foto_pelicula_grid:hover {
   filter: brightness(0.5);
   border-radius: 15px;
 }
-
 .estreno_grid {
   color: white;
   position: absolute;
@@ -60,19 +55,16 @@
   margin-bottom: 5px;
   width: 70px;
 }
-
 .titulo_grid {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 25px;
 }
-
 .contenedor_filtros {
   display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
-  justify-content: center; /* Centra los elementos */
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .select_opciones,
 .select_opcion_categoria {
   font-family: "Nunito", sans-serif;
@@ -85,80 +77,83 @@
   width: 200px;
   margin: 10px;
 }
-
 .select_opciones:focus,
 .select_opcion_categoria:focus {
   color: #ffffff;
   background-color: #fc1860;
 }
-
 .opciones option {
   font-size: 14px;
 }
-
 .titulo_filtro {
   font-size: 20px;
   color: black;
 }
-
 .pagination {
   text-align: center;
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
-
-
-
 @media screen and (max-width: 1200px) {
-  /* Ajustes para pantallas grandes */
   .contenedor_cards_grid {
-    grid-template-columns: repeat(5, 1fr); /* Cambiar a cinco columnas en pantallas grandes */
+    grid-template-columns: repeat(
+      5,
+      1fr
+    );
   }
 }
-
 @media screen and (max-width: 850px) {
-  /* Ajustes para pantallas medianas */
   .contenedor_cards_grid {
-    grid-template-columns: repeat(3, 1fr); /* Mantener tres columnas en pantallas medianas */
+    grid-template-columns: repeat(
+      3,
+      1fr
+    );
   }
 }
-
 @media screen and (max-width: 480px) {
-  /* Ajustes para pantallas pequeñas */
   .contenedor_central_grid {
     padding: 15px;
     justify-content: center;
     align-items: center;
-    align-content:center;
-    
+    align-content: center;
   }
-
   .contenedor_cards_grid {
-    grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas muy pequeñas */
+    grid-template-columns: repeat(
+      3,
+      1fr
+    );
     align-items: center;
     justify-content: center;
     align-content: center;
     width: 100%;
     place-content: center;
-
   }
-
   .contenedor_imagen_grid {
-    text-align: center; /* Centrar la imagen */
+    text-align: center;
   }
-  .contenedor_card{
+  .contenedor_card {
     display: flex;
     align-items: center;
     justify-content: center;
     align-items: center;
     place-content: center;
-    
+    width: 100%;
   }
   .pagination {
     text-align: center;
     margin-top: 10px;
     display: flex;
     justify-content: center;
+  }
+  .foto_pelicula_grid {
+    width: 100px;
+    height: 183px;
+  }
+  .titulo_grid {
+    font-size: 18px;
+  }
+  .contenedor_card {
+    width: 100px;
   }
 }

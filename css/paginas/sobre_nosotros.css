@@ -4,11 +4,11 @@
   padding: 0;
   font-family: "Nunito", sans-serif;
 }
-body{
+body {
   background-color: #181818;
 }
 .contenedor_acerca {
-  
+  padding-top: 25px;
   text-align: center;
   color: #e4e4e4;
   font-size: 20px;
@@ -17,14 +17,14 @@ body{
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.719);
 }
-.texto_acerca{
+.texto_acerca {
   width: 80%;
   text-align: center;
 }
 .about {
-  display: inline-block; /* Cambia a display inline-block */
-  vertical-align: top; /* Alinea los elementos en la parte superior */
-  margin: 20px; /* Añade un poco de espacio entre los elementos */
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
   margin-right: 10px;
 }
 .contenedor_titulo {
@@ -37,7 +37,6 @@ body{
   font-size: 45px;
 }
 .seccion_equipo {
-  /* padding: 60px; */
   text-align: center;
   color: #e4e4e4;
   font-size: 18px;
@@ -50,7 +49,7 @@ body{
   display: flex;
   text-align: center;
   margin-top: 20px;
-  margin-right: 10px;
+  padding-bottom: 20px;
   justify-content: space-around;
   align-content: space-around;
 }
@@ -59,24 +58,24 @@ body{
   margin-top: 20px;
   display: inline-block;
   margin-right: 10px;
-  position: relative; /* Agregado para el posicionamiento del botón */
+  position: relative;
 }
 .miembro img {
-  width: 200px; 
-  height: 250px; 
+  width: 200px;
+  height: 250px;
   overflow: hidden;
   object-fit: cover;
   border-radius: 10px;
-  transition: filter 0.3s; /* Agregado para la transición del filtro */
+  transition: filter 0.3s;
 }
 .miembro:hover img {
-  filter: brightness(0.5); /* Reducir la luminosidad al 80% al pasar el cursor */
+  filter: brightness(0.5);
 }
 .descargar-cv {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%);
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
@@ -101,19 +100,15 @@ body{
   border-collapse: separate;
   border-spacing: 10px;
   width: 100%;
+  padding: 90px 30px;
 }
-
-.textos_tecnologias{
-  /* margin-top: 10px; */
+.textos_tecnologias {
   margin: 10px;
   font-size: 21px;
   width: 100%;
   word-wrap: break-word;
-  
-    
+  padding: 20px;
 }
-
-
 .fila_tecnologias {
   display: flex;
   flex-direction: row;
@@ -121,12 +116,10 @@ body{
   width: 100%;
   margin: 20px;
 }
-
-.span_tecnologias{
+.span_tecnologias {
   margin-bottom: 50px;
   font-size: 22px;
 }
-
 .interior_celda {
   display: flex;
   flex-direction: column;
@@ -135,7 +128,6 @@ body{
   width: 50%;
   height: 100%;
 }
-
 .foto_tecnologia {
   height: 100px;
   width: 100px;
@@ -159,53 +151,44 @@ body{
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.901);
 }
-
-.titulo_tecnologia{
+.titulo_tecnologia {
   text-decoration: none;
   font-size: 25px;
   margin-top: 7px;
 }
-
-.barra_sobre_nosotros{
-  border: none; /* Elimina el borde predeterminado del hr */
-  height: 9px; /* Establece la altura del hr */
-  background: linear-gradient(to right, rgba(0, 207, 255, 0.8), rgba(111, 0, 255, 0.5), rgba(192, 47, 108, 0.8)); /* Aplica el degradado */
+.barra_sobre_nosotros {
+  border: none;
+  height: 9px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 207, 255, 0.8),
+    rgba(111, 0, 255, 0.5),
+    rgba(192, 47, 108, 0.8)
+  );
   filter: blur(10px);
 }
 
-/*Agregar cv's a modo de descarga al pararse sobre las imagenes(Agregar diseño)*/
-
 @media screen and (max-width: 850px) {
-
   .contenedor_miembros_equipo {
     flex-direction: column;
   }
 }
 
-
 @media (max-width: 600px) and (min-width: 320px) {
-
   .contenedor_titulo {
     margin: 10px;
-    
   }
-
-  .contenedor_tecnologias{
+  .contenedor_tecnologias {
     border-spacing: 5px;
   }
-
-  .fila_tecnologias{
+  .fila_tecnologias {
     margin: 5px;
   }
-
-  .textos_tecnologias{
+  .textos_tecnologias {
     font-size: 17px;
     width: auto;
-    
   }
-
-  .interior_celda{
+  .interior_celda {
     height: 100%;
   }
-
 }

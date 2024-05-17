@@ -2,12 +2,8 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-}
-
-body {
   font-family: "Nunito", sans-serif;
 }
-
 /*Titular*/
 .contenedor_padre {
   position: relative;
@@ -22,11 +18,11 @@ body {
   top: -30;
   left: 0;
   width: 100%;
-  height: 50%; /* Porcentaje que ocupa*/
+  height: 50%;
   background-image: url("../../img/peliculas/dune_two.jpg");
   background-size: cover;
   background-position: center;
-  z-index: 1; /* Asegura que la imagen esté por encima de otras capas */
+  z-index: 1;
 }
 /* Estilos para la parte inferior de color negro */
 .parte-inferior-negra {
@@ -46,17 +42,16 @@ body {
   z-index: 3;
   background-color: #181818;
 }
-
 .poster_pelicula {
   top: -180px;
   display: flex;
   position: relative;
   border-radius: 2vh;
   box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  left: 200px;
 }
 
 /*Contenedor Elenco*/
-
 .contenedor_general_elenco {
   display: flex;
   background-color: #242424;
@@ -71,12 +66,9 @@ body {
 
 .contenedor_elenco {
   margin: 7px;
-
   height: 35px;
-
   border-radius: 15px;
 }
-
 .puesto {
   color: white;
   background-color: #343434;
@@ -84,7 +76,6 @@ body {
   padding: 6px;
   font-size: 20px;
 }
-
 .trailer_boton {
   color: white;
   text-decoration: none;
@@ -125,30 +116,27 @@ body {
   font-size: 80px;
   margin-left: 30px;
   color: rgb(255, 255, 255);
-  
+  left:0
 }
 
 .div_datos {
   position: relative;
   top: -110px;
-  
+  left: 200px;
 }
+
 .contenedor_opciones {
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: start;
-
-
 }
 .contenedor_opciones_a {
   margin-left: 20px;
   font-size: 23px;
   display: flex;
   flex-direction: row;
-  
 }
-
 .edad {
   color: white;
   padding: 3px;
@@ -158,15 +146,11 @@ body {
   width: auto;
   display: flex;
   flex-direction: row;
-
 }
-
 .contenedor_genero {
   margin: 20px;
   display: flex;
-
 }
-
 .genero {
   margin: 10px;
   font-size: 25px;
@@ -180,106 +164,104 @@ body {
   margin-top: 30px;
   width: 63%;
 }
-
 .estreno_pelicula {
   color: white;
 }
-
 .duracion_pelicula {
   color: white;
 }
-
-.contenedor_descripcion{
+.contenedor_descripcion {
   color: white;
   padding: 10px;
   font-size: 24px;
-  width: 100%;
+  width: 70%;
   word-wrap: break-word;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-
-
+  
 }
-
-.descripcion{
+.descripcion {
   width: 80%;
+  
 }
-
-
-
+/*Responsive*/
 @media screen and (max-width: 850px) {
   .contenedor_card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-  .contenedor_elenco{
+  .contenedor_elenco {
     display: flex;
     flex-direction: column;
-  }
-
-  .contenedor_padre {
-    height: 2300px;
+    align-items: center;
     
   }
-
+  .contenedor_padre {
+    height: 2500px;
+  }
   .parte-inferior-negra {
     height: 70%;
   }
-
   .contenedor_genero {
     margin: 10px;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
-
   .genero {
     font-size: 20px;
   }
-
-  .descripcion{
+  .descripcion {
     text-align: center;
-    
   }
-
   .contenedor_linea {
     display: flex;
     justify-content: center;
   }
-
-  .contenedor_opciones{
+  .contenedor_opciones {
     justify-content: center;
     flex-direction: column;
   }
-
-  .puesto{
+  .puesto {
     font-size: 17px;
     padding: auto;
   }
-
-  .elenco{
+  .elenco {
     font-size: 17px;
     padding: auto;
   }
-
-  .contenedor_padre_elenco{
-    display: block;
+  .contenedor_padre_elenco {
+    display: flex;
+    
   }
-  
-  .titulo_peli{
-    font-size:50px;
+  .titulo_peli {
+    font-size: 50px;
   }
   .contenedor_opciones_b {
     margin: 5px;
+    
   }
-  .contenedor_opciones_b a{
+  .contenedor_opciones_b a {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    margin: 10px;
   }
- }
+  
+  .poster_pelicula {
+    left: 0;
+  }
+  
+  .div_datos{
+    left: 0;
+   text-align: center;
+  }
+  .contenedor_descripcion{
+    width: 100%;
+  }
+  
+}
