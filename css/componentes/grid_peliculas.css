@@ -64,17 +64,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 .select_opciones,
 .select_opcion_categoria {
   font-family: "Nunito", sans-serif;
-  font-size: 20px;
-  padding: 5px 10px;
+  font-size: 30px;
+  padding: 5px 20px;
   border: 1px solid #181818;
-  border-radius: 15px;
-  background-color: #fc1860;
+  border-radius: 18px;
+  background-color: #94004a;
   color: #ffffff;
-  width: 200px;
+  width: 230px;
   margin: 10px;
 }
 .select_opciones:focus,
