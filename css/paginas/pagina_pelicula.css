@@ -230,12 +230,10 @@
 .boton {
   width: 100px;
   height: 40px;
-  
   border-radius: 15px;
   background-color: #94004a;
   color: #fff;
   font-size: 22px;
-  
 }
 
 .boton:hover{
@@ -273,7 +271,6 @@
 .comentario_fecha{
   font-size: 20px;
   color: #94004a;
-  padding-bottom: 13px;
 }
 .comentario_texto{
   text-align:start;
@@ -363,5 +360,17 @@ cursor: pointer;
   }
   .contenedor_descripcion {
     width: 100%;
+  }
+  .text_area{
+    width: 90%;
+  }
+  .carta_comentarios{
+    width: 85%;
+  }
+  .comentario_fecha{
+    font-size: 15px;
+  }
+  .comentario_texto{
+    font-size: 15px;
   }
 }
