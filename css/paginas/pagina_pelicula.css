@@ -179,6 +179,118 @@
 .descripcion {
   width: 80%;
 }
+/*Caja comentarios*/
+.seccion_comentarios {
+  width: 100%;
+  display: flex;
+  padding-bottom:20px;
+  background-color: #252525;
+  flex-direction: column
+}
+.caja_comentarios {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.titulo_comentario {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 40px;
+  color: white;
+}
+.form_mensaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.text_area {
+  width: 70%; /* Ajusta según tus necesidades */
+  height: 100px; /* Ajusta la altura según tus necesidades */
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none; /* Evita que el usuario cambie el tamaño */
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+::placeholder{
+  font-size: 25px;
+  padding-top: 21px;
+}
+.div_boton{
+  display:flex;
+  align-items: start;
+  justify-content: end;
+  width: 70%;
+  margin-top: 13px;
+}
+
+.boton {
+  width: 100px;
+  height: 40px;
+  
+  border-radius: 15px;
+  background-color: #94004a;
+  color: #fff;
+  font-size: 22px;
+  
+}
+
+.boton:hover{
+  background-color: #dd227f;
+  cursor: pointer;
+}
+/* Lista comentarios */
+
+.lista_comentarios{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.carta_comentarios{
+  margin: 10px;
+  display: flex;
+  background-color: #161616;
+  width: 60%;
+  padding: 20px;
+  border-radius: 15px;
+}
+.contenido_comentario{
+  width: 100%;
+}
+.comentario_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.comentario_autor{
+  font-size: 22px;
+  color: #94004a;
+}
+.comentario_fecha{
+  font-size: 20px;
+  color: #94004a;
+  padding-bottom: 13px;
+}
+.comentario_texto{
+  text-align:start;
+  font-size: 20px;
+  color: #ffffff;
+  width: 90%;
+}
+.boton_reportar_comentario{
+color: #ffffff;
+text-align: end;
+cursor: pointer;
+}
+.boton_reportar_comentario:hover{
+  color: #94004a;
+  transition: 0.5s;
+}
+
 /*Responsive*/
 @media screen and (max-width: 850px) {
   .contenedor_card {

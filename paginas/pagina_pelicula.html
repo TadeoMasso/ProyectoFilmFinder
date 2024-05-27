@@ -1,81 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="/img/fotos_recursos/favicon.ico" />
-  <link rel="stylesheet" href="../css/paginas/pagina_pelicula.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <script>
-    $(function () {
-      $("#footer").load("../componentes/footer.html");
-      $("#navbar").load("../componentes/navbar.html");
-    });
-  </script>
-  <title>Pagina Pelicula | FilmFinder</title>
-</head>
-<body>
-  <!--Navbar-->
-  <div id="navbar"></div>
-  <!--Inicio-->
-  <section>
-    <div class="contenedor_padre">
-      <div class="fondo-img"></div>
-      <div class="parte-inferior-negra">
-        <div class="contenedor_card">
-          <div>
-            <img class="poster_pelicula" src="../img/peliculas/dune_two.jpg" alt="peli" />
-          </div>
-          <div class="div_datos">
-            <h1 class="titulo_peli">Dune: Part Two</h1>
-            <div class="contenedor_opciones">
-              <div class="contenedor_opciones_a">
-                <span class="duracion_pelicula"><i class="fas fa-clock"></i>1h 30m</span>
-                <strong class="estreno_pelicula">● 2023 ● </strong>
-                <span class="edad">ATP</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/img/fotos_recursos/favicon.ico"
+    />
+    <link rel="stylesheet" href="../css/paginas/pagina_pelicula.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script>
+      $(function () {
+        $("#footer").load("../componentes/footer.html");
+        $("#navbar").load("../componentes/navbar.html");
+      });
+    </script>
+    <title>Pagina Pelicula | FilmFinder</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <div id="navbar"></div>
+    <!--Inicio-->
+    <section>
+      <div class="contenedor_padre">
+        <div class="fondo-img"></div>
+        <div class="parte-inferior-negra">
+          <div class="contenedor_card">
+            <div>
+              <img
+                class="poster_pelicula"
+                src="../img/peliculas/dune_two.jpg"
+                alt="peli"
+              />
+            </div>
+            <div class="div_datos">
+              <h1 class="titulo_peli">Dune: Part Two</h1>
+              <div class="contenedor_opciones">
+                <div class="contenedor_opciones_a">
+                  <span class="duracion_pelicula"
+                    ><i class="fas fa-clock"></i>1h 30m</span
+                  >
+                  <strong class="estreno_pelicula">● 2023 ● </strong>
+                  <span class="edad">ATP</span>
+                </div>
+                <div class="contenedor_opciones_b">
+                  <a
+                    rel="noopener"
+                    target="_blank"
+                    href="https://www.youtube.com/watch?v=YdhPAyApRQ4&pp=ygUSZHVuZSAyIHRyYWlsZXIgc3Vi"
+                    class="trailer_boton"
+                    ><i class="fas fa-film"></i> Trailer</a
+                  >
+                  <a
+                    rel="noopener"
+                    href="http://"
+                    class="compartir_boton"
+                    target="_blank"
+                    ><i class="fas fa-share"></i> Compartir</a
+                  >
+                  <a
+                    target="_blank"
+                    href="./index.html#form-register"
+                    class="reportar_boton"
+                    ><i class="fas fa-flag"></i> Reportar</a
+                  >
+                </div>
               </div>
-              <div class="contenedor_opciones_b">
-                <a rel="noopener" target="_blank" href="https://www.youtube.com/watch?v=YdhPAyApRQ4&pp=ygUSZHVuZSAyIHRyYWlsZXIgc3Vi" class="trailer_boton"><i class="fas fa-film"></i> Trailer</a>
-                <a rel="noopener" href="http://" class="compartir_boton" target="_blank"><i class="fas fa-share"></i> Compartir</a>
-                <a target="_blank" href="./index.html#form-register" class="reportar_boton"><i
-                    class="fas fa-flag"></i> Reportar</a>
+              <div class="contenedor_genero">
+                <span class="genero"> Genero 1</span>
+                <span class="genero">Genero 2</span>
+                <span class="genero">Genero 3</span>
+              </div>
+              <div class="contenedor_linea">
+                <hr class="linea" />
+              </div>
+              <div class="contenedor_descripcion">
+                <p class="descripcion">
+                  El duque Paul Atreides se une a los Fremen y comienza su
+                  entrenamiento para convertirse en Muad'Dib, mientras trata de
+                  evitar el terrible futuro que ha previsto: una guerra santa en
+                  su nombre, esparciéndose por todo el universo conocido.
+                </p>
+              </div>
+              <div class="contenedor_linea">
+                <hr class="linea" />
+              </div>
+              <div class="contenedor_padre_elenco">
+                <div class="contenedor_elenco">
+                  <span class="puesto">Director: </span>
+                  <span class="elenco"> Nombre inventado</span>
+                </div>
+                <div class="contenedor_elenco">
+                  <span class="puesto">Elenco: </span>
+                  <span class="elenco"> Nombre inventado</span>
+                  <span class="elenco"> Nombre inventado</span>
+                  <span class="elenco"> Nombre inventado</span>
+                </div>
               </div>
             </div>
-            <div class="contenedor_genero">
-              <span class="genero"> Genero 1</span> 
-              <span class="genero">Genero 2</span>
-              <span class="genero">Genero 3</span>
-            </div>
-            <div class="contenedor_linea" >
-              <hr class="linea">
-            </div>
-            <div class="contenedor_descripcion">
-            <p class="descripcion">El duque Paul Atreides se une a los Fremen y comienza su entrenamiento para convertirse en Muad'Dib, mientras trata de evitar el terrible futuro que ha previsto: una guerra santa en su nombre, esparciéndose por todo el universo conocido.</p>
-            </div>
-          <div class="contenedor_linea">
-            <hr class="linea">
-          </div>
-          <div class="contenedor_padre_elenco">
-            <div class="contenedor_elenco">
-              <span class="puesto">Director: </span>
-              <span class="elenco"> Nombre inventado</span>
-            </div>          
-              <div class="contenedor_elenco">
-                <span class="puesto">Elenco: </span>
-                <span class="elenco"> Nombre inventado</span>
-                <span class="elenco"> Nombre inventado</span>
-                <span class="elenco"> Nombre inventado</span>
-              </div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="seccion_comentarios">
+      <div class="caja_comentarios">
+        <h2 class = "titulo_comentario">Deja un comentario de la pelicula!</h2>
+        <form action="" class="form_mensaje">
+      <textarea class="text_area" name="comentarios" id="" placeholder="Deja un comentario..."
+      ></textarea>
+        <div class="div_boton">
+          <button type="submit" class="boton">
+            Enviar
+        </div>
+        </button>
+      </form>
+      </div>
+      <div class="lista_comentarios">
+        <div class="carta_comentarios">
+          <div class="contenido_comentario">
+              <div class="comentario_header">
+                  <h3 class="comentario_autor">Tadeo Masso</h3>
+                  <span class="comentario_fecha"><b>25 de mayo de 2024</b></span>
+              </div>
+              <p class="comentario_texto">Muy buena peli no la veo mas.</p>
+              <div class="boton_reportar_comentario">
+                <i class="fas fa-flag"></i>
+              </div>
+          </div>
+      </div>
+      <div class="carta_comentarios">
+        <div class="contenido_comentario">
+            <div class="comentario_header">
+                <h3 class="comentario_autor">Ramiro</h3>
+                <span class="comentario_fecha"><b>25 de mayo de 2024</b></span>
+            </div>
+            <p class="comentario_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus debitis quo nemo dolores maxime placeat? Aut doloribus dolorem quia aspernatur repellendus, nostrum ipsam fuga hic! Magnam ipsum vitae reiciendis ab.</p>
+            <div class="boton_reportar_comentario">
+              <i class="fas fa-flag"></i>
+            </div>
+            
+          </div>
     </div>
-  </section>
-  <!--Footer-->
-  <div id="footer"></div>
-</body>
+    <div class="carta_comentarios">
+      <div class="contenido_comentario">
+          <div class="comentario_header">
+              <h3 class="comentario_autor">Joaquin</h3>
+              <span class="comentario_fecha"><b>25 de mayo de 2024</b></span>
+          </div>
+          <p class="comentario_texto">Saquen la parte 32.</p>
+          <div class="boton_reportar_comentario">
+            <i class="fas fa-flag"></i>
+          </div>
+      </div>
+  </div>
+  <div class="carta_comentarios">
+    <div class="contenido_comentario">
+        <div class="comentario_header">
+            <h3 class="comentario_autor">Marcos</h3>
+            <span class="comentario_fecha"><b>25 de mayo de 2024</b></span>
+        </div>
+        <p class="comentario_texto">Una poronga la peli del orto</p>
+        <div class="boton_reportar_comentario">
+        
+          <i class="fas fa-flag"></i>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!--Footer-->
+    <div id="footer"></div>
+  </body>
 </html>
